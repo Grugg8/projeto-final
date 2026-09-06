@@ -1,0 +1,9 @@
+lisa_incidencia=TI acumulada 2010-2025
+lisa_nb=queen + 1NN para municipio sem vizinho
+lisa_p=permutacao espacial condicional (nsim=999, semente=12345), corte 0.05
+lisa_n_significativos=2221 (39.9%)
+lisa_Alto-Alto=855 (15.37%)
+lisa_Baixo-Baixo=1327 (23.85%)
+lisa_Alto-Baixo=11 (0.20%)
+lisa_Baixo-Alto=28 (0.50%)
+lisa_Nao Significativo=3343 (60.08%)

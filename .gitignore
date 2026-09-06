@@ -1,0 +1,61 @@
+# ==========================================
+# 1. SISTEMA OPERACIONAL E RSTUDIO
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.tmp
+
+# ==========================================
+# 2. DOCUMENTO DO TCC E MANUSCRITO (RESERVADOS)
+# ==========================================
+01. Principal/
+02. Bibliografia/
+fichamento_bibliografia.md
+TCC-GGV-modelo.zip
+outputs/
+
+# ==========================================
+# 3. DADOS BRUTOS PESADOS E ARQUIVOS COMPACTADOS
+# ==========================================
+03. Dados/Originais/
+*.zip
+*.rar
+*.tar.gz
+*.7z
+*.nc
+*.dbc
+*.parquet
+
+# Bloqueia bases pesadas locais
+03. Dados/*.rdata
+03. Dados/*.Rdata
+03. Dados/*.RDS
+03. Dados/*.rds
+
+# Preserva notas e dicionários metodológicos
+!03. Dados/Documentacao/**
+
+# ==========================================
+# 4. ARQUIVOS AUXILIARES GERAIS
+# ==========================================
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+texput.log
