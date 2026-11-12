@@ -160,3 +160,6 @@ texput.log
 
 # Histórico de descarte permanece local
 /revisar_descarte/
+
+# Relatório histórico preservado apenas no arquivo local
+/output/reports/_legado/

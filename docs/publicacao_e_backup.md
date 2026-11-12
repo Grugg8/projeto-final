@@ -8,6 +8,10 @@ Os dados brutos e processados não acompanham um clone. O GitHub permite revisar
 
 Também ficam locais os PDFs compilados, referências em PDF, materiais históricos, exportações para compartilhamento, registros de recuperação, configurações de agentes e arquivos de edição. Nenhum desses arquivos é apagado por estar no `.gitignore`.
 
+## Documentos prontos para leitura
+
+Na [versão v2026.11.12](https://github.com/Grugg8/projeto-final/releases/tag/v2026.11.12), os cinco PDFs compilados estão anexados separadamente. Eles somam cerca de 46,9 MB e não exigem R ou LaTeX para leitura. Manter PDFs nas versões de distribuição evita acrescentar uma nova cópia binária ao histórico dos fontes a cada recompilação.
+
 ## Como obter uma cópia leve
 
 No GitHub, clicar em **Code → Download ZIP**. Copiar esse ZIP para a mídia física. Ele contém a versão publicada, sem o histórico do Git nem os dados locais. Após extrair, abrir `TCC.Rproj` e seguir o README. Para compilar, usar os comandos LaTeX ali descritos.

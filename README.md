@@ -76,6 +76,10 @@ Os dados locais não acompanham necessariamente um clone. Consultar `data/metada
 
 A reorganização autorizada de 12/11/2026 tem registros locais em `docs/audits/reorganizacao_2026-11-12/`. Após avaliação, foram excluídos somente 58 auxiliares autorizados; cinco logs e o inventário permanecem em `revisar_descarte/`. Esses registros de recuperação não integram a versão pública. Dados e duplicatas científicas foram preservados.
 
+## Documentos para leitura
+
+Os [cinco PDFs compilados estão disponíveis na página da versão v2026.11.12](https://github.com/Grugg8/projeto-final/releases/tag/v2026.11.12): monografia, apresentação, roteiro cronometrado, guia de estudo e consulta rápida. Eles podem ser baixados sem instalar R ou LaTeX.
+
 ## GitHub e transferência para mídia física
 
 O repositório público está em [Grugg8/projeto-final](https://github.com/Grugg8/projeto-final). A versão publicada contém os scripts ativos, fontes do manuscrito e defesa, notas de apoio, bibliografia BibTeX, logos, figuras usadas nesses documentos, tabelas, macros, logs selecionados e resultados nativos atuais do SaTScan.
