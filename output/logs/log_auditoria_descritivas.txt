@@ -1,0 +1,29 @@
+total_casos_prov_2010_2025=22187924
+perfil_dedup_removidos=2216
+total_obitos=16975
+letalidade_pct=0.08
+pct_sexo_F=54.93
+pct_sexo_M=44.94
+moran_2024=0.6127
+moran_min=0.2146
+moran_max=0.6127
+incidencia=taxa acumulada 2010-2025; denominador=populacao media do periodo
+tmax=maximo de quatro instantaneos diarios ERA5-Land; P90 historico municipal
+pct_mun_alto_risco=93.39
+pct_mun_persistencia_10mais=12.20
+moran_2010=0.3336 (p=0)
+moran_2011=0.2146 (p=2.386e-161)
+moran_2012=0.2703 (p=1.873e-252)
+moran_2013=0.4117 (p=0)
+moran_2014=0.2585 (p=3.659e-251)
+moran_2015=0.4134 (p=0)
+moran_2016=0.3748 (p=0)
+moran_2017=0.2257 (p=2.91e-178)
+moran_2018=0.3400 (p=0)
+moran_2019=0.4898 (p=0)
+moran_2020=0.5860 (p=0)
+moran_2021=0.2997 (p=1.236e-310)
+moran_2022=0.4459 (p=0)
+moran_2023=0.5043 (p=0)
+moran_2024=0.6127 (p=0)
+moran_2025=0.5445 (p=0)

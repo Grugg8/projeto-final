@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage[brazil]{babel}
+\usepackage{lmodern,microtype,amsmath,amssymb,array,tabularx}
+\usepackage[margin=1.65cm,top=1.8cm,bottom=1.7cm,headheight=14pt]{geometry}
+\usepackage{xcolor,fancyhdr,hyperref}
+\definecolor{azul}{HTML}{18374C}\definecolor{cinza}{HTML}{53616A}
+\hypersetup{colorlinks=true,urlcolor=azul,pdfauthor={Lucas Batista de Oliveira},pdftitle={Consulta rápida da defesa: 37min30s}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\color{azul}Consulta rápida | meta de 37min30s}\fancyhead[R]{\small Lucas Batista de Oliveira}\fancyfoot[L]{\footnotesize Cronômetro contínuo desde o slide 1. Tempos incluem pausas e transições.}\fancyfoot[R]{\thepage/5}
+\renewcommand{\headrulewidth}{0.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1em}
+\newcommand{\parte}[2]{\vspace*{0.1cm}{\Large\bfseries\color{azul}#1\par}\vspace{0.12cm}{\small\color{cinza}#2\par}\vspace{0.35cm}}
+\newcommand{\pista}[4]{\noindent\begin{minipage}{\linewidth}
+\hbox to \linewidth{\strut\textbf{\textcolor{azul}{#1}}\hfil{\small #2}}\par\vspace{0.08cm}
+{\fontsize{10.8}{13.1}\selectfont\raggedright #3\par}
+#4\end{minipage}\par\vspace{0.27cm}}
+\begin{document}
+\parte{Introdução e dados}{Slides 1 a 8 | Relógio: 00:00 a 07:30 | Duração por slide e horário de término}
+{\small Distribuição espacial da dengue no Brasil: identificação de áreas de alto risco e características socioambientais\par}\vspace{0.2cm}
+{\small Olhe a pista, recupere o raciocínio e volte à banca. \textbf{Fim} é o tempo acumulado, sem reiniciar o cronômetro.\par}\vspace{0.25cm}
+{\small\textbf{Marcos ao terminar os slides}\par}\vspace{0.12cm}{\small\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\linewidth}{@{}X X@{}}
+Slide 4: \textbf{04:00} & Slide 28: \textbf{27:40}\\
+Slide 8: \textbf{07:30} & Slide 30: \textbf{29:30}\\
+Slide 14: \textbf{12:55} & Slide 42: \textbf{33:20}\\
+Slide 19: \textbf{18:20} & Slide 49: \textbf{35:30}\\
+Slide 24: \textbf{22:50} & Slide 52: \textbf{37:30}\\
+\end{tabularx}}\vspace{0.28cm}
+\pista{1. Abertura}{45s | fim 00:45}{Lucas; orientação; Brasil, 2010--2025; excesso de casos diante da população; pergunta do estudo; atenção aos métodos.}{}
+\pista{2. Dengue e heterogeneidade territorial}{1min15s | fim 02:00}{Arboviroses; epidemias recorrentes; clima, urbanização e condições sociais; heterogeneidade territorial; população exposta; totais nacionais escondem contrastes locais.}{}
+\pista{3. Antecedentes e recorte do estudo}{1min15s | fim 03:15}{Literatura local e nacional; Moran: semelhança entre vizinhos; LISA: associação local; varredura: excesso; oito formulações; sensibilidade ao período.}{}
+\pista{4. Objetivos}{\textbf{\color{azul}45s | fim 04:00}}{Descrever; avaliar associação; detectar zonas; comparar referências e períodos; abordagem exploratória; sem efeitos causais.}{}
+\pista{5. Desenho e unidade de análise}{50s | fim 04:50}{Ecológico; município; malha fixa de 2010; 5.564 municípios \ensuremath{\times} 16 anos; Noronha excluído; anual versus acumulado; varredura puramente espacial.}{}
+\pista{6. Fontes e compatibilização}{50s | fim 05:40}{SINAN; IBGE; clima; MapBiomas; mesma referência territorial; periodicidades distintas; saneamento de 2022; chuva e umidade apenas descritivas.}{}
+\pista{7. Dos registros ao painel espacial}{45s | fim 06:25}{Classificação; deduplicação; códigos harmonizados; residência e ano; conferência dos totais; painel espacial \ensuremath{\neq} perfil bruto.}{}
+\pista{8. Incidência anual e razão acumulada}{\textbf{\color{azul}1min05s | fim 07:30}}{Por 100 mil: anual = casos/população do ano; acumulada = soma de casos/população média; pessoas-ano: soma das populações; episódios repetidos; não percentual de infectados.}{}
+\clearpage
+\parte{Métodos: associação e varredura}{Slides 9 a 19 | Relógio: 07:30 a 18:20 | Duração por slide e horário de término}
+\pista{9. Vizinhança e pesos espaciais}{45s | fim 08:15}{Queen: fronteira ou vértice; pesos 1/n\ensuremath{_i}; linha soma 1; média dos vizinhos; unidade isolada \ensuremath{\rightarrow} vizinho mais próximo.}{}
+\pista{10. Índice Global de Moran}{1min00s | fim 09:15}{Incidência anual; desvios da média; produtos vizinhos; sinais iguais \ensuremath{\rightarrow} contribuição positiva; normalização pela dispersão; organização espacial \ensuremath{\neq} magnitude da epidemia.}{}
+\pista{11. Inferência para o Moran global}{50s | fim 10:05}{Aleatoriedade espacial; esperança \ensuremath{-}1/(n\ensuremath{-}1); (observado \ensuremath{-} esperado)/desvio-padrão; aproximação normal; unilateral positivo; 5\% por ano; 16 testes separados.}{}
+\pista{12. Moran local e interpretação dos quadrantes}{1min15s | fim 11:20}{Razão acumulada; quadrantes + significância; valor focal e pesos fixos; 999 simulações condicionais com reposição; bilateral pela posição simulada; sem correção múltipla.}{}
+\pista{13. Varredura espacial de Poisson}{50s | fim 12:10}{Contagem Poisson; exposição populacional; média = variância como hipótese; intensidade interna versus externa; casos acumulados/população média; sem início ou duração da zona.}{}
+\pista{14. Casos esperados sob risco homogêneo}{\textbf{\color{azul}45s | fim 12:55}}{Fração populacional \ensuremath{\times} casos nacionais; somar municípios da zona; total nacional preservado; risco homogêneo como referência; não previsão nem meta sanitária.}{}
+\pista{15. Janelas candidatas e desenho da busca}{45s | fim 13:40}{Círculos nos centroides; raios crescentes; tetos simultâneos: 16\% da população e 200 km; desenho fixo nas oito formulações; centro \ensuremath{\neq} origem da transmissão.}{}
+\pista{16. Razão de verossimilhança}{1min30s | fim 15:10}{Condicionar ao total; Poisson \ensuremath{\rightarrow} binomial; coeficiente combinatório cancela; fatores interior/exterior; sem excesso: \ensuremath{\lambda} = 1; selecionar máximo; primário \ensuremath{\neq} maior RR.}{}
+\pista{17. Monte Carlo e significância da busca}{1min15s | fim 16:25}{999 réplicas sob a hipótese nula; repetir busca completa; guardar máximos; comparar ao observado; fórmula empírica: (1 + contagem)/1.000; mínimo 0,001; secundárias sem sobreposição; procedimento distinto do LISA.}{}
+\pista{18. Risco relativo de uma zona}{50s | fim 17:15}{Taxa interna/taxa externa; exterior participa; fórmula bruta no sem ajuste; nos ajustados, referência padronizada; observado/esperado isolado \ensuremath{\neq} RR; contraste \ensuremath{\neq} significância.}{}
+\pista{19. Exemplo de cálculo para uma zona}{\textbf{\color{azul}1min05s | fim 18:20}}{Fictício: 1.000 casos; 10\% da população; esperado 100, observado 180; exterior: observado 820, esperado 900; RR \ensuremath{\approx} 1,98; log \ensuremath{\lambda} \ensuremath{\approx} 29,47; significância exige simulação.}{}
+\vfill{\small\color{cinza}\textbf{Ao explicar equações:} aponte os termos; diga o que cada operação compara; termine pela interpretação.\par}
+\clearpage
+\parte{Métodos: covariáveis e comparação}{Slides 20 a 30 | Relógio: 18:20 a 29:30 | Duração por slide e horário de término}
+\pista{20. Ondas de calor: definição do indicador}{1min00s | fim 19:20}{Máxima de quatro horários; agregação por área; P90 municipal, 2010--2025; \ensuremath{\geq} 3 dias consecutivos com máxima \ensuremath{\geq} P90; somar dias dos episódios; extremo relativo ao clima local.}{}
+\pista{21. População urbana: interpolação entre censos}{50s | fim 20:10}{Fração urbana: censos 2010/2022; interpolação linear em 12 intervalos; fração \ensuremath{\times} população anual; 2023--2025 mantém fração de 2022; aproximação, não medição anual.}{}
+\pista{22. Densidade e proporção urbanas}{50s | fim 21:00}{Densidade: população urbana/área urbanizada; proporção: área urbanizada/área municipal; habitantes/km\textsuperscript{2} versus fração territorial; média das razões anuais; proporção territorial \ensuremath{\neq} fração de moradores urbanos.}{}
+\pista{23. Covariáveis e formação dos estratos}{45s | fim 21:45}{Tercis de municípios, não habitantes; 1.855/1.855/1.854; calor/urbanização crescentes; coberturas decrescentes; empates repartidos por ordem; cortes operacionais; perda de variação interna.}{}
+\pista{24. Índice socioambiental composto}{\textbf{\color{azul}1min05s | fim 22:50}}{Cinco componentes; calor e proporção urbana divididos pelos máximos; coberturas: 1 \ensuremath{-} cobertura/máximo; pesos iguais; soma 0--5; depois tercis; densidade excluída.}{}
+\pista{25. Padronização indireta por covariável}{1min15s | fim 24:05}{Taxa nacional por estrato: casos/população; aplicar à população correspondente da zona; somar parcelas; excesso perante a nova referência; sete ajustes separados; composto como classificação única.}{}
+\pista{26. Sem ajuste e com padronização}{1min05s | fim 25:10}{Sem ajuste: taxa basal nacional única; ajustado: taxa por estrato; referência nacional do grupo; mesmos observados; mudam esperados, estatísticas e zonas; nova hipótese nula.}{}
+\pista{27. Mesma zona, dois casos esperados}{1min15s | fim 26:25}{Fictício: país 30.000 habitantes/600 casos; taxas 1, 2 e 3 por 100 habitantes; zona: 1.000 habitantes, 40 casos; composição 100/200/700; esperado 20 \ensuremath{\rightarrow} 1+4+21 = 26; observados fixos.}{}
+\pista{28. O papel das covariáveis nesta aplicação}{\textbf{\color{azul}1min15s | fim 27:40}}{Estratos, não regressoras nesta aplicação; taxas basais estimadas; sem coeficientes de efeito; representação Poisson com fator/exposição possível; resultado: zonas, sem interpretação causal.}{}
+\pista{29. WMAPE e concordância espacial}{1min00s | fim 28:40}{WMAPE (\%): 100 \ensuremath{\times} soma dos desvios absolutos/soma dos observados; diagnóstico interno, não previsão; Jaccard: interseção/união municipal; composição das coleções; nenhuma medida decide sozinha.}{}
+\pista{30. Sensibilidade à retirada de 2024}{\textbf{\color{azul}50s | fim 29:30}}{Retirar 2024; 15 anos não consecutivos; recalcular casos, população média e esperados; manter estratos e desenho; comparar zonas, polos e métricas; sensibilidade temporal.}{}
+\vfill{\small\color{azul}\textbf{Marco central: 29:30.} Métodos concluídos antes de abrir o slide 31. Nos resultados, uma mensagem por imagem.\par}
+\clearpage
+\parte{Resultados: uma mensagem por slide}{Slides 31 a 42 | Relógio: 29:30 a 33:20 | Duração por slide e horário de término}
+\pista{31. Evolução anual da incidência}{25s | fim 29:55}{2024: cerca de 30\% dos casos; pico epidêmico; motivação da sensibilidade ao período.}{}
+\pista{32. Sazonalidade mensal}{15s | fim 30:10}{Média mensal; primeiro semestre; pico em abril; calendário nacional, com diferenças locais.}{}
+\pista{33. Evolução regional da incidência}{15s | fim 30:25}{Trajetórias regionais distintas; elevação no Sul; escalas verticais próprias; comparar pelos eixos.}{}
+\pista{34. Heatmap da incidência por UF e ano}{15s | fim 30:40}{UF \ensuremath{\times} ano; escala logarítmica; ordens de grandeza; diferenças de cor não são lineares.}{}
+\pista{35. Carga acumulada municipal}{15s | fim 30:55}{Centro-Sul; casos acumulados/população média; carga do período; não taxa anual.}{}
+\pista{36. Recorrência de anos epidêmicos}{15s | fim 31:10}{Número de anos acima do limiar; recorrência temporal; distinta da seleção das zonas.}{}
+\pista{37. Autocorrelação espacial nos 16 anos}{20s | fim 31:30}{Moran positivo e significativo nos 16 anos; máximo em 2024; associação \ensuremath{\neq} magnitude da incidência.}{}
+\pista{38. Associação espacial local}{20s | fim 31:50}{Alto-alto e baixo-baixo; não significativo \ensuremath{\neq} ausência de dengue; nível nominal, sem correção múltipla.}{}
+\pista{39. Incidência por estratos das covariáveis}{20s | fim 32:10}{Taxas por pessoas-ano; calor crescente entre tercis; grupos distintos; comparação descritiva, sem causalidade.}{}
+\pista{40. Zonas de alto risco sem ajuste}{20s | fim 32:30}{129 zonas; participação dos casos supera a populacional; excesso sob referência homogênea.}{}
+\pista{41. Zona primária: Adolfo (SP)}{25s | fim 32:55}{Adolfo: centro da janela; RR \ensuremath{\approx} 3 da zona inteira versus exterior; primário pela verossimilhança.}{}
+\pista{42. Comparação das oito formulações}{\textbf{\color{azul}25s | fim 33:20}}{Calor: queda de cerca de 10 p.p. no WMAPE; coleção extensa; diagnóstico, não validação preditiva.}{}
+\clearpage
+\parte{Resultados e encerramento}{Slides 43 a 52 | Relógio: 33:20 a 37:30 | Duração por slide e horário de término}
+\pista{43. Zonas após padronização por calor}{20s | fim 33:40}{Queluzito; Jaccard 56\%; contagens semelhantes, composição diferente; mudança de referência, não redução causal.}{}
+\pista{44. Risco relativo municipal sem ajuste}{15s | fim 33:55}{RR municipal \ensuremath{\neq} RR da zona; escuro: maior contraste; branco: RR \ensuremath{\leq} 1.}{}
+\pista{45. Risco relativo municipal sob calor}{15s | fim 34:10}{Mesmos observados; novos esperados; escalas próprias; comparação direta de cores somente no apoio.}{}
+\pista{46. WMAPE nacional e diferenças regionais}{25s | fim 34:35}{Queda no Centro-Oeste, Sudeste e Sul; aumento no Norte; redução nacional não uniforme.}{}
+\pista{47. Recorrência entre as formulações}{15s | fim 34:50}{Cerca de mil municípios nas oito formulações; recorrência entre modelos, não entre anos; não mede intensidade.}{}
+\pista{48. Sensibilidade à exclusão de 2024}{25s | fim 35:15}{Retirada de 2024; mudam contagens, polos e composição; sobreposição parcial; sensibilidade ao período.}{}
+\pista{49. Zonas sem ajuste no cenário sem 2024}{\textbf{\color{azul}15s | fim 35:30}}{Primário passa a Ubarana; mais zonas \ensuremath{\neq} mais casos; contrastes recalculados em 15 anos.}{}
+\pista{50. Interpretação dos achados}{45s | fim 36:15}{Centro-Sul recorrente; limites sensíveis à referência/período; literatura contextualiza; mecanismos não isolados; calor: redução nacional, aumento no Norte.}{}
+\pista{51. Limitações}{40s | fim 36:55}{Subnotificação; escala municipal; saneamento fixo; Poisson e círculos; categorização; testes exploratórios; WMAPE interno; alcance descritivo, sem efeitos individuais.}{}
+\pista{52. Considerações finais}{\textbf{\color{azul}35s | fim 37:30}}{Associação espacial; excessos no Centro-Sul; sensibilidade dos limites; contribuição descritiva; agradecimento; abrir arguição.}{}
+\vspace{0.05cm}{\small\textbf{Após o encerramento: apoio, sem fala prevista}\par}\vspace{0.15cm}
+{\small\textbf{53. Comparação do RR em escala comum} | Escala comum do RR; somente se necessário na arguição.\par}\vspace{0.1cm}
+{\small\textbf{54. Referências citadas} | Referências; consulta durante a arguição.\par}\vspace{0.1cm}
+\vfill{\small\textbf{Se houver atraso:} ao entrar nos resultados, reduza comentários secundários. Preserve sem ajuste versus calor, comparação e sensibilidade. Reserve os dois minutos finais. A duração real precisa ser confirmada no ensaio.\par}
+\end{document}

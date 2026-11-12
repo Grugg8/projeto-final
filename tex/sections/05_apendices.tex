@@ -1,0 +1,53 @@
+\apendice
+\renewcommand\thechapter{\arabic{chapter}}
+
+\chapter{Tabela Completa de \textit{Clusters} Espaciais}
+\label{app:clusters}
+
+A tabela apresenta todos os \textit{clusters} significativos da varredura em rodada única com teto duplo. $RR$ é o risco relativo da zona; os casos esperados são calculados sob o modelo de Poisson e a população média municipal do período.
+
+\input{../output/tables/tabela_clusters_satscan_puro.tex}
+
+\par\vspace{0.4em}
+\parbox{\linewidth}{\footnotesize\textit{Nota:} A tabela não apresenta município polo; a ordenação segue a coleção reportada pelo programa. Valores de casos e risco relativo são os estimados para 2010--2025.}
+
+\chapter{Tabela Completa de \textit{Clusters} com Ajuste Térmico}
+\label{app:clusters_termica}
+
+A tabela apresenta as zonas da varredura em rodada única com padronização indireta pelos tercis de dias sob onda de calor. Os valores devem ser interpretados como resultado exploratório da análise ajustada, não como estimativas de efeito causal da temperatura.
+
+\input{../output/tables/tabela_clusters_satscan_termica.tex}
+
+\par\vspace{0.4em}
+\parbox{\linewidth}{\footnotesize\textit{Nota:} A tabela não apresenta município polo; a ordenação segue a coleção reportada pelo programa. Valores de casos, expectativa e risco relativo são os estimados para 2010--2025.}
+
+\chapter{Pranchas de zonas e de risco relativo}
+\label{app:pranchas}
+
+As pranchas reúnem, em uma página cada, os oito mapas de zonas significativas de 2010--2025 (Figura~\ref{fig:prancha_clusters}), os oito do cenário sem 2024 (Figura~\ref{fig:prancha_clusters_sem2024}) e os seis mapas de risco relativo das demais formulações (Figura~\ref{fig:prancha_rr}). O desenho é compacto: uma escala gráfica e uma rosa dos ventos por prancha, painéis em ordem de leitura e sem contorno municipal individual. A leitura município a município deve usar as figuras do corpo e as tabelas de \textit{clusters} dos Apêndices~\ref{app:clusters} e \ref{app:clusters_termica}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth]{fig_prancha_clusters_completo.png}
+    \caption{Zonas significativas de alto risco por formulação da varredura espacial, Brasil, 2010--2025, em ordem de leitura: sem ajuste, calor, esgoto, densidade urbana, proporção urbana, água, lixo e índice composto. Fontes: SINAN e IBGE.}
+    \label{fig:prancha_clusters}
+    \vspace{0.3em}
+    {\footnotesize\noindent\textit{Nota:} Em laranja, municípios em zonas com nível de 5\%; em cinza, municípios fora de zonas. Todas as formulações usam o mesmo limite de 16\% da população e 200~km, com 999 réplicas e reporte sem sobreposição geográfica.\par}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth]{fig_prancha_clusters_sem2024.png}
+    \caption{Zonas significativas de alto risco por formulação da varredura espacial sem os casos de 2024, Brasil, 2010--2023 e 2025, em ordem de leitura: sem ajuste, calor, esgoto, densidade urbana, proporção urbana, água, lixo e índice composto. Fontes: SINAN e IBGE.}
+    \label{fig:prancha_clusters_sem2024}
+    \vspace{0.3em}
+    {\footnotesize\noindent\textit{Nota:} Mesma codificação de cor e mesma configuração da prancha anterior; o painel sem 2024 reúne 15.664.546 casos.\par}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.86\textwidth]{fig_prancha_rr_completo.png}
+    \caption{Risco relativo municipal estimado pela varredura espacial sob os ajustes por esgoto, densidade urbana, proporção urbana, água, lixo e índice composto (ordem de leitura), Brasil, 2010--2025. Fontes: SINAN e IBGE.}
+    \label{fig:prancha_rr}
+    \vspace{0.3em}
+    {\footnotesize\noindent\textit{Nota:} Tons mais escuros indicam risco relativo mais alto, na escala comum às seis formulações, de 1,0 a 11,9; em branco, municípios com $RR \le 1{,}0$. Os dois primeiros modelos constam da Figura~\ref{fig:mapas_rr}.\par}

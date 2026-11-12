@@ -1,0 +1,3 @@
+rotulo	periodo	clusters	prim_polo	prim_uf	prim_municipios	prim_raio_km	prim_rr	prim_p	cob_municipios	cob_casos	cob_casos_pct	jaccard_vs_puro_pct	recuperacao_vs_puro_pct	wmape_pct
+puro	sem2024	169	Ubarana	São Paulo	320	199.9777667457	3.7884371583	1e-17	1700	10573560	67.4999454181436	100	100	80.9751269470702
+propurb	sem2024	173	Ubarana	São Paulo	320	199.9777667457	3.6510706536	1e-17	1867	10123571	64.6272863573576	79.9697275479314	93.2352941176471	80.3082274551923

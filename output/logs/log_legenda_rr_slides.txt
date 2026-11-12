@@ -1,0 +1,5 @@
+Legenda comum do painel de RR da defesa
+Paleta: magma(200, direction = -1), igual ao script 05d.
+Limites: 1 a 8.595357836300
+Limite superior reconstruído do máximo das duas tabelas municipais de RR.
+Mapas originais e suas escalas de cores preservados.

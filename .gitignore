@@ -1,6 +1,4 @@
-# ==========================================
-# 1. SISTEMA OPERACIONAL E RSTUDIO
-# ==========================================
+# Sistema, editores e dependências locais
 .DS_Store
 .DS_Store?
 ._*
@@ -10,47 +8,37 @@ Thumbs.db
 ehthumbs.db
 .Rproj.user/
 .Rhistory
+.Rapp.history
 .RData
 .Ruserdata
+node_modules/
 *.tmp
 
-# ==========================================
-# 2. DOCUMENTO DO TCC E MANUSCRITO (RESERVADOS)
-# ==========================================
-01. Principal/
-02. Bibliografia/
-fichamento_bibliografia.md
-TCC-GGV-modelo.zip
-outputs/
-
-# ==========================================
-# 3. DADOS BRUTOS PESADOS E ARQUIVOS COMPACTADOS
-# ==========================================
-03. Dados/Originais/
+# Dados locais e objetos serializados; proveniência em data/metadata/
+/data/raw/
+/data/processed/
+*.rds
+*.RDS
+*.rdata
+*.Rdata
+*.parquet
+*.nc
+*.dbc
 *.zip
 *.rar
 *.tar.gz
 *.7z
-*.nc
-*.dbc
-*.parquet
 
-# Bloqueia bases pesadas locais
-03. Dados/*.rdata
-03. Dados/*.Rdata
-03. Dados/*.RDS
-03. Dados/*.rds
-
-# Preserva notas e dicionários metodológicos
-!03. Dados/Documentacao/**
-
-# ==========================================
-# 4. ARQUIVOS AUXILIARES GERAIS
-# ==========================================
+# Auxiliares de compilação; logs científicos em output/logs/ são preservados
+/tex/build/
+/slides/build/
+/slides/notes/build/
+/slides/meetings/build/
+/tex/notes/build/
+/tex/templates/**/build/
 *.aux
 *.bbl
 *.blg
-*.log
 *.out
 *.toc
 *.lof
@@ -58,4 +46,117 @@ outputs/
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.nav
+*.snm
+*.vrb
 texput.log
+
+# Arquivos de referência, exportações e PDFs anteriores à migração
+/docs/references/
+/docs/archive/
+/output/documents/
+/output/exports/
+/slides/*.pdf
+/slides/notes/*.pdf
+/slides/meetings/*.pdf
+/tex/notes/*.pdf
+/docs/audits/*
+!/docs/audits/reorganizacao_2026-11-12/
+
+# Recuperação local da migração; manifesto e relatórios permanecem visíveis
+/docs/audits/reorganizacao_2026-11-12/fontes_antes/
+/docs/audits/reorganizacao_2026-11-12/git_*
+/revisar_descarte/*
+!/revisar_descarte/README.md
+!/revisar_descarte/inventario.tsv
+
+# Arquivos já existentes acima de 50 MB (50.000.000 bytes)
+# Git não dispõe de filtro nativo por tamanho. Conferir novos arquivos antes de adicioná-los.
+/data/processed/base_final.RDS
+/data/processed/base_mapas.rds
+/data/processed/clima/legacy/dados_finais.csv
+/data/raw/clima/era5land_diario/era5land_t2m_2010.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2011.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2012.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2013.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2014.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2015.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2016.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2017.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2018.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2019.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2020.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2021.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2022.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2023.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2024.nc
+/data/raw/clima/era5land_diario/era5land_t2m_2025.nc
+/data/raw/malhas/31MUE250GC_SIR.shp
+/data/raw/malhas/BR_Municipios_2025.shp
+/data/raw/malhas/BR_Municipios_2025.zip
+/data/raw/malhas/malha_BR_10.RDS
+/data/raw/mapbiomas/MAPBIOMAS_BRAZIL-COL.11-BIOME_STATE_MUNICIPALITY.zip
+/data/raw/sinan/DENGBR11.dbc
+/data/raw/sinan/DENGBR13.dbc
+/data/raw/sinan/DENGBR15.dbc
+/data/raw/sinan/DENGBR16.dbc
+/data/raw/sinan/DENGBR19.dbc
+/data/raw/sinan/DENGBR20.dbc
+/data/raw/sinan/DENGBR22.dbc
+/data/raw/sinan/DENGBR23.dbc
+/data/raw/sinan/DENGBR24.dbc
+/data/raw/sinan/DENGBR25.dbc
+/output/exports/Figuras para GPT.zip
+
+# Versão pública: manter configurações de agentes, contexto e auditorias locais fora do GitHub
+/.commandcode/
+/.opencode/
+/CONTEXTO_TCC.md
+/AGENTS.md
+/docs/audits/
+
+# Material histórico e exemplos preservados localmente
+/tex/templates/
+/tex/notes/
+/slides/meetings/
+/output/tables/_legado/
+/output/models/_legado/
+/output/models/satscan/_legado/
+/output/models/params/_legado/
+/output/macros/_legado/
+/output/logs/_legado/
+/output/logs/legacy/
+
+# Publicar somente figuras usadas nos documentos atuais; demais continuam locais
+/output/figures/*
+!/output/figures/fig_evolucao_moran.pdf
+!/output/figures/fig_heatmap_incidencia_uf_ano.pdf
+!/output/figures/fig_mapa_clusters_2x1_calor_com_sem2024.png
+!/output/figures/fig_mapa_clusters_2x1_puro_calor.png
+!/output/figures/fig_mapa_clusters_2x1_puro_com_sem2024.png
+!/output/figures/fig_mapa_clusters_satscan_puro.png
+!/output/figures/fig_mapa_clusters_satscan_puro_sem2024.png
+!/output/figures/fig_mapa_clusters_satscan_termica.png
+!/output/figures/fig_mapa_grandes_regioes.png
+!/output/figures/fig_mapa_incidencia_acumulada.png
+!/output/figures/fig_mapa_lisa.png
+!/output/figures/fig_mapa_persistencia_ajustes.png
+!/output/figures/fig_mapa_persistencia_epidemica.png
+!/output/figures/fig_mapa_precipitacao.png
+!/output/figures/fig_mapa_rr_2x1_puro_calor.png
+!/output/figures/fig_mapa_rr_satscan_puro.png
+!/output/figures/fig_mapa_rr_satscan_termica.png
+!/output/figures/fig_mapa_temperatura.png
+!/output/figures/fig_mapa_umidade.png
+!/output/figures/fig_prancha_clusters_completo.png
+!/output/figures/fig_prancha_clusters_sem2024.png
+!/output/figures/fig_prancha_rr_completo.png
+!/output/figures/fig_serie_boxplot_temperatura.pdf
+!/output/figures/fig_serie_temporal_dengue.pdf
+!/output/figures/fig_series_regioes.pdf
+!/output/figures/fig_series_regioes_slides_2x3.pdf
+!/output/figures/fig_slides_rr_puro_calor.png
+!/output/figures/legenda_rr_slides_puro_calor.pdf
+
+# Histórico de descarte permanece local
+/revisar_descarte/

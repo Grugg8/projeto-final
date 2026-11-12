@@ -1,0 +1,9 @@
+	Sem ajuste	Calor	Esgoto adequado	Densidade urbana	Proporção urbana	Água por rede	Coleta de lixo	Índice composto
+Sem ajuste	100	55.98	64.5	82.21	74.93	60.35	62.87	61.86
+Calor	55.98	100	52.26	54.66	52.87	49.39	48.95	49.21
+Esgoto adequado	64.5	52.26	100	71.21	74.02	69.14	74.84	72.53
+Densidade urbana	82.21	54.66	71.21	100	85.12	67.06	69.18	69.05
+Proporção urbana	74.93	52.87	74.02	85.12	100	68.11	72.73	71.38
+Água por rede	60.35	49.39	69.14	67.06	68.11	100	75.48	77.57
+Coleta de lixo	62.87	48.95	74.84	69.18	72.73	75.48	100	78.6
+Índice composto	61.86	49.21	72.53	69.05	71.38	77.57	78.6	100

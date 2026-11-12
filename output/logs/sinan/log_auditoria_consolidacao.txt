@@ -1,0 +1,40 @@
+linhas_esperadas=89024
+linhas_obtidas=89024
+municipios_unicos=5564
+anos_unicos=16
+total_casos_painel=22098006
+total_2025=1636855
+registros_deduplicados_entre_arquivos=2216
+casos_fora_da_malha=121 (codigos=39)
+casos_noronha_excluidos=1229
+na_pop=0
+na_ti=0
+na_censo=0
+na_ondas_ano=0
+na_dias_onda=0
+na_tmax_extrema=0
+na_tmedia_anual=0
+na_noites_tropicais=0
+na_umid_media=0
+na_precip_acum=35
+tmax_definicao=maximo dos quatro instantaneos diarios ERA5-Land; P90 historico municipal (2010-2025)
+pop_2018=sidra_6579 (correcao de aba duplicada no POP.xlsx)
+pop_2011_xlsx=192373822 pop_2011_sidra=192376612 dif=-2790
+pop_2012_xlsx=193944168 pop_2012_sidra=193944168 dif=+0
+pop_2013_xlsx=201029877 pop_2013_sidra=201029877 dif=+0
+pop_2014_xlsx=202765678 pop_2014_sidra=202765678 dif=+0
+pop_2015_xlsx=204447119 pop_2015_sidra=204447119 dif=+0
+pop_2016_xlsx=206078458 pop_2016_sidra=206078458 dif=+0
+pop_2017_xlsx=207657913 pop_2017_sidra=207657913 dif=+0
+pop_2019_xlsx=210144064 pop_2019_sidra=210144064 dif=+0
+pop_2020_xlsx=211752591 pop_2020_sidra=211752591 dif=+0
+pop_2021_xlsx=213314499 pop_2021_sidra=213314499 dif=+0
+pop_2024_xlsx=212580434 pop_2024_sidra=212580434 dif=+0
+de_para=nenhum codigo pos-2010 pendente
+total_2010=997687 (oficial 1011548, dif -1.4%)
+total_2013=1460485 (oficial 1452489, dif +0.6%)
+total_2015=1699876 (oficial 1688688, dif +0.7%)
+total_2016=1513266 (oficial 1483623, dif +2.0%)
+total_2019=1551348 (oficial 1540961, dif +0.7%)
+total_2022=1392216 (oficial 1423018, dif -2.2%)
+total_2024=6433460 (oficial 6464269, dif -0.5%)

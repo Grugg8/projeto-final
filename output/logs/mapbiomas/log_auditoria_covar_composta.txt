@@ -1,0 +1,23 @@
+versao=v4-max-comp5
+regra_aplicada=estrita: calor = dias_onda_total >= 415
+corte_calor_estrito=415 | n_estrito=193
+mediana_prop_esgoto_adequado=59.35 (v3: SWAP rede->adequada)
+mediana_prop_esgoto_rede_legado=32.29 (v2, só auditoria)
+mediana_prop_urb_media=0.0047081
+mediana_dias_onda_total=390
+expostos_binario_redefinido=193 (3.47% de 5564; v2 era 226; SÓ REGISTRO — modelo binario NAO rerodado, saiu de cena)
+estrato 1: mun=193 | casos=411684 | pop-ano=60135863 | TI=684.6/100mil
+estrato 0: mun=5371 | casos=21686322 | pop-ano=3219441110 | TI=673.6/100mil
+comp5_metodo=padronizacao pelo maximo municipal (5 componentes em [0,1]; escore 0-5 crescente = pior condicao)
+comp5_maximos=dias_onda_total=526 | prop_esgoto_adequado=100.00 | prop_urb_media=0.9923165 | prop_agua_rede=100.00 | prop_lixo_coletado=100.00
+comp5_escore_faixa=0.6079 a 3.4968
+comp5_n_nivel1=1855 | comp5_n_nivel2=1855 | comp5_n_nivel3=1854
+comp5_faixa_escore_nivel1=0.6079 a 1.3176
+comp5_faixa_escore_nivel2=1.3176 a 1.9385
+comp5_faixa_escore_nivel3=1.9387 a 3.4968
+comp5 nivel 1: mun=1855 | casos=15006333 | pop-ano=1900773966 | TI=789.5/100mil
+comp5 nivel 2: mun=1855 | casos=5618093 | pop-ano=932484084 | TI=602.5/100mil
+comp5 nivel 3: mun=1854 | casos=1473580 | pop-ano=446318923 | TI=330.2/100mil
+checkpoint SIDRA v1 (pop_urb_sidra_bruto_2010_2022.rds) mantido no disco; v2-proporcao NAO o utiliza (componente urbano sem populacao)
+checagem_prop_urb=min 0.0000193 max 0.9923
+checagem_area_malha_5880=min 3.6 max 159549.9 km2

@@ -1,0 +1,217 @@
+satscan_versao=SaTScan v10.3.2 (rsatscan 1.0.10)
+satscan_base=dataset_tcc_consolidado.rds
+satscan_periodo=completo (16 anos: 2010-2025)
+satscan_datas_prm=2010/01/01 a 2025/12/31 (periodo completo)
+satscan_casos=total casos provaveis do periodo = 22098006
+satscan_populacao=populacao media residente do periodo = 204973525
+satscan_locais=5564
+satscan_modelo=Poisson discreto, puramente espacial, janela circular
+satscan_janela=teto duplo (AND): 16% da populacao sob risco + 200 km de raio
+satscan_hierarquicos=ReportHierarchicalClusters=y; secundarios p<0.05, sem sobreposicao geografica (NoGeoOverlap)
+satscan_gini=desativado (ReportGiniClusters=n; rodada unica)
+satscan_desenho=orientador (unico desenho vigente; sem rodada Gini)
+satscan_montecarlo=999 repeticoes, RandomizationSeed=12345
+satscan_sobreposicao=disjuntos (NoGeoOverlap confirmado; join direto por município válido)
+satscan_clusters_significativos=195
+satscan_wmape=72.0990% (soma|O-E|=15932438; soma O=22098006; denominador nacional)
+satscan_wmape_verificacao=soma(E)-soma(O)=0.000000; desvio max por zona=0.0000 (195 zonas)
+satscan_esperado_municipal=wmape_municipal_satscan_lixo.tsv (5.564 municipios)
+satscan_wmape_nacional=wmape_nacional_satscan_lixo.tsv
+satscan_covariadas=ativada (COVAR_LIXO: tercis de prop_lixo_coletado; 1=melhor/maior a 3=pior/menor; rotina 02d v4)
+comparacao=arquivo comparacao_clusters_puro_lixo.tsv
+comparacao_jaccard=62.9% | recuperacao=83.3% | wmape puro=75.0809% | wmape modelo=72.0990%
+satscan_cluster_1=35 | polo=IACRI | municipios=314 | raio=197.0 km | C_Z=2053801 | E_Z=764504 | RR=2.859 | p=0.000000
+satscan_cluster_2=31 | polo=ARAÚJOS | municipios=229 | raio=199.8 km | C_Z=2588779 | E_Z=1139553 | RR=2.441 | p=0.000000
+satscan_cluster_3=52 | polo=PALMELO | municipios=123 | raio=198.5 km | C_Z=2260489 | E_Z=1067016 | RR=2.246 | p=0.000000
+satscan_cluster_4=41 | polo=FORMOSA DO OESTE | municipios=225 | raio=199.5 km | C_Z=1036431 | E_Z=430448 | RR=2.477 | p=0.000000
+satscan_cluster_5=35 | polo=PORTO FERREIRA | municipios=132 | raio=122.9 km | C_Z=1794087 | E_Z=972704 | RR=1.919 | p=0.000000
+satscan_cluster_6=31 | polo=BOTUMIRIM | municipios=127 | raio=199.1 km | C_Z=336601 | E_Z=163157 | RR=2.079 | p=0.000000
+satscan_cluster_7=52 | polo=PEROLÂNDIA | municipios=43 | raio=188.5 km | C_Z=207725 | E_Z=87759 | RR=2.380 | p=0.000000
+satscan_cluster_8=42 | polo=GARUVA | municipios=4 | raio=28.4 km | C_Z=195740 | E_Z=82025 | RR=2.399 | p=0.000000
+satscan_cluster_9=12 | polo=CRUZEIRO DO SUL | municipios=7 | raio=147.1 km | C_Z=65174 | E_Z=13108 | RR=4.984 | p=0.000000
+satscan_cluster_10=35 | polo=UBATUBA | municipios=38 | raio=99.0 km | C_Z=528559 | E_Z=331773 | RR=1.608 | p=0.000000
+satscan_cluster_11=31 | polo=SANTANA DO MANHUAÇU | municipios=176 | raio=141.1 km | C_Z=478009 | E_Z=314866 | RR=1.530 | p=0.000000
+satscan_cluster_12=50 | polo=TERENOS | municipios=25 | raio=181.4 km | C_Z=258449 | E_Z=145956 | RR=1.780 | p=0.000000
+satscan_cluster_13=52 | polo=BURITINÓPOLIS | municipios=43 | raio=197.3 km | C_Z=122177 | E_Z=51274 | RR=2.391 | p=0.000000
+satscan_cluster_14=52 | polo=UIRAPURU | municipios=63 | raio=194.4 km | C_Z=121480 | E_Z=62675 | RR=1.943 | p=0.000000
+satscan_cluster_15=51 | polo=COLÍDER | municipios=21 | raio=199.5 km | C_Z=85974 | E_Z=38558 | RR=2.235 | p=0.000000
+satscan_cluster_16=31 | polo=RIO NOVO | municipios=51 | raio=64.5 km | C_Z=220970 | E_Z=142360 | RR=1.558 | p=0.000000
+satscan_cluster_17=29 | polo=MACAÚBAS | municipios=78 | raio=194.3 km | C_Z=145931 | E_Z=86469 | RR=1.692 | p=0.000000
+satscan_cluster_18=43 | polo=DERRUBADAS | municipios=84 | raio=91.6 km | C_Z=104583 | E_Z=61363 | RR=1.708 | p=0.000000
+satscan_cluster_19=35 | polo=CAPELA DO ALTO | municipios=9 | raio=29.0 km | C_Z=182123 | E_Z=123820 | RR=1.475 | p=0.000000
+satscan_cluster_20=42 | polo=GASPAR | municipios=5 | raio=21.5 km | C_Z=133107 | E_Z=84519 | RR=1.578 | p=0.000000
+satscan_cluster_21=12 | polo=SENA MADUREIRA | municipios=10 | raio=176.6 km | C_Z=94112 | E_Z=55279 | RR=1.705 | p=0.000000
+satscan_cluster_22=29 | polo=ILHÉUS | municipios=10 | raio=43.2 km | C_Z=89477 | E_Z=52084 | RR=1.721 | p=0.000000
+satscan_cluster_23=51 | polo=PLANALTO DA SERRA | municipios=8 | raio=118.3 km | C_Z=35614 | E_Z=15688 | RR=2.272 | p=0.000000
+satscan_cluster_24=27 | polo=IGACI | municipios=8 | raio=23.3 km | C_Z=65750 | E_Z=37284 | RR=1.766 | p=0.000000
+satscan_cluster_25=33 | polo=VOLTA REDONDA | municipios=1 | raio=0.0 km | C_Z=56223 | E_Z=33328 | RR=1.689 | p=0.000000
+satscan_cluster_26=32 | polo=VITÓRIA | municipios=1 | raio=0.0 km | C_Z=66301 | E_Z=43365 | RR=1.530 | p=0.000000
+satscan_cluster_27=51 | polo=NOVA LACERDA | municipios=9 | raio=148.1 km | C_Z=17792 | E_Z=7593 | RR=2.344 | p=0.000000
+satscan_cluster_28=21 | polo=BARRA DO CORDA | municipios=1 | raio=0.0 km | C_Z=12048 | E_Z=4214 | RR=2.860 | p=0.000000
+satscan_cluster_29=51 | polo=COTRIGUAÇU | municipios=8 | raio=180.4 km | C_Z=15472 | E_Z=6495 | RR=2.383 | p=0.000000
+satscan_cluster_30=33 | polo=CANTAGALO | municipios=3 | raio=21.1 km | C_Z=14089 | E_Z=5800 | RR=2.430 | p=0.000000
+satscan_cluster_31=25 | polo=ZABELÊ | municipios=3 | raio=18.8 km | C_Z=7000 | E_Z=1871 | RR=3.743 | p=0.000000
+satscan_cluster_32=41 | polo=GUARAQUEÇABA | municipios=3 | raio=36.6 km | C_Z=36003 | E_Z=21439 | RR=1.680 | p=0.000000
+satscan_cluster_33=23 | polo=BREJO SANTO | municipios=7 | raio=31.1 km | C_Z=20874 | E_Z=10474 | RR=1.994 | p=0.000000
+satscan_cluster_34=23 | polo=TAUÁ | municipios=2 | raio=35.5 km | C_Z=9320 | E_Z=3244 | RR=2.874 | p=0.000000
+satscan_cluster_35=29 | polo=BARRA DO CHOÇA | municipios=1 | raio=0.0 km | C_Z=8555 | E_Z=2944 | RR=2.907 | p=0.000000
+satscan_cluster_36=24 | polo=RAFAEL FERNANDES | municipios=10 | raio=22.9 km | C_Z=13875 | E_Z=6545 | RR=2.121 | p=0.000000
+satscan_cluster_37=24 | polo=JARDIM DO SERIDÓ | municipios=9 | raio=28.7 km | C_Z=14857 | E_Z=7356 | RR=2.020 | p=0.000000
+satscan_cluster_38=17 | polo=APARECIDA DO RIO NEGRO | municipios=5 | raio=45.4 km | C_Z=51179 | E_Z=36843 | RR=1.390 | p=0.000000
+satscan_cluster_39=51 | polo=ALTO BOA VISTA | municipios=14 | raio=183.0 km | C_Z=18846 | E_Z=11025 | RR=1.710 | p=0.000000
+satscan_cluster_40=42 | polo=CAXAMBU DO SUL | municipios=2 | raio=10.9 km | C_Z=2652 | E_Z=510 | RR=5.206 | p=0.000000
+satscan_cluster_41=27 | polo=MATA GRANDE | municipios=2 | raio=24.9 km | C_Z=5709 | E_Z=2052 | RR=2.783 | p=0.000000
+satscan_cluster_42=26 | polo=JATAÚBA | municipios=2 | raio=26.7 km | C_Z=4984 | E_Z=1745 | RR=2.856 | p=0.000000
+satscan_cluster_43=29 | polo=ICHU | municipios=3 | raio=19.2 km | C_Z=13940 | E_Z=7805 | RR=1.786 | p=0.000000
+satscan_cluster_44=29 | polo=ITABERABA | municipios=1 | raio=0.0 km | C_Z=10723 | E_Z=5504 | RR=1.949 | p=0.000000
+satscan_cluster_45=42 | polo=CORONEL FREITAS | municipios=1 | raio=0.0 km | C_Z=2378 | E_Z=499 | RR=4.766 | p=0.000000
+satscan_cluster_46=24 | polo=NATAL | municipios=1 | raio=0.0 km | C_Z=124442 | E_Z=104402 | RR=1.193 | p=0.000000
+satscan_cluster_47=23 | polo=ICÓ | municipios=1 | raio=0.0 km | C_Z=7181 | E_Z=3238 | RR=2.218 | p=0.000000
+satscan_cluster_48=24 | polo=JANDAÍRA | municipios=10 | raio=33.6 km | C_Z=14130 | E_Z=8183 | RR=1.727 | p=0.000000
+satscan_cluster_49=11 | polo=SÃO FRANCISCO DO GUAPORÉ | municipios=8 | raio=136.3 km | C_Z=12095 | E_Z=6700 | RR=1.806 | p=0.000000
+satscan_cluster_50=25 | polo=DONA INÊS | municipios=1 | raio=0.0 km | C_Z=2350 | E_Z=512 | RR=4.594 | p=0.000000
+satscan_cluster_51=16 | polo=OIAPOQUE | municipios=2 | raio=91.8 km | C_Z=6622 | E_Z=3048 | RR=2.173 | p=0.000000
+satscan_cluster_52=25 | polo=TAVARES | municipios=15 | raio=37.2 km | C_Z=16858 | E_Z=10684 | RR=1.578 | p=0.000000
+satscan_cluster_53=29 | polo=VÁRZEA NOVA | municipios=3 | raio=42.8 km | C_Z=10112 | E_Z=5626 | RR=1.798 | p=0.000000
+satscan_cluster_54=25 | polo=TEIXEIRA | municipios=1 | raio=0.0 km | C_Z=2514 | E_Z=727 | RR=3.459 | p=0.000000
+satscan_cluster_55=51 | polo=SÃO JOSÉ DO RIO CLARO | municipios=4 | raio=89.1 km | C_Z=12459 | E_Z=7651 | RR=1.629 | p=0.000000
+satscan_cluster_56=25 | polo=JUAZEIRINHO | municipios=1 | raio=0.0 km | C_Z=2690 | E_Z=862 | RR=3.120 | p=0.000000
+satscan_cluster_57=23 | polo=RERIUTABA | municipios=1 | raio=0.0 km | C_Z=2730 | E_Z=924 | RR=2.954 | p=0.000000
+satscan_cluster_58=29 | polo=SERROLÂNDIA | municipios=3 | raio=16.9 km | C_Z=5483 | E_Z=2673 | RR=2.051 | p=0.000000
+satscan_cluster_59=33 | polo=VASSOURAS | municipios=1 | raio=0.0 km | C_Z=7958 | E_Z=4463 | RR=1.783 | p=0.000000
+satscan_cluster_60=15 | polo=ANAPU | municipios=4 | raio=121.4 km | C_Z=8579 | E_Z=4969 | RR=1.727 | p=0.000000
+satscan_cluster_61=11 | polo=ESPIGÃO D'OESTE | municipios=1 | raio=0.0 km | C_Z=3669 | E_Z=1539 | RR=2.385 | p=0.000000
+satscan_cluster_62=27 | polo=MARAGOGI | municipios=1 | raio=0.0 km | C_Z=5399 | E_Z=2693 | RR=2.005 | p=0.000000
+satscan_cluster_63=24 | polo=BODÓ | municipios=9 | raio=37.3 km | C_Z=13523 | E_Z=8880 | RR=1.523 | p=0.000000
+satscan_cluster_64=13 | polo=SÃO GABRIEL DA CACHOEIRA | municipios=1 | raio=0.0 km | C_Z=4700 | E_Z=2237 | RR=2.101 | p=0.000000
+satscan_cluster_65=13 | polo=JUTAÍ | municipios=1 | raio=0.0 km | C_Z=2558 | E_Z=916 | RR=2.792 | p=0.000000
+satscan_cluster_66=35 | polo=IGUAPE | municipios=1 | raio=0.0 km | C_Z=5078 | E_Z=2536 | RR=2.002 | p=0.000000
+satscan_cluster_67=23 | polo=HIDROLÂNDIA | municipios=1 | raio=0.0 km | C_Z=2585 | E_Z=951 | RR=2.719 | p=0.000000
+satscan_cluster_68=26 | polo=MIRANDIBA | municipios=5 | raio=39.2 km | C_Z=12505 | E_Z=8575 | RR=1.459 | p=0.000000
+satscan_cluster_69=41 | polo=SENGÉS | municipios=1 | raio=0.0 km | C_Z=3286 | E_Z=1571 | RR=2.091 | p=0.000000
+satscan_cluster_70=26 | polo=GOIANA | municipios=1 | raio=0.0 km | C_Z=9917 | E_Z=6706 | RR=1.479 | p=0.000000
+satscan_cluster_71=23 | polo=PALHANO | municipios=1 | raio=0.0 km | C_Z=1424 | E_Z=454 | RR=3.139 | p=0.000000
+satscan_cluster_72=25 | polo=MONTE HOREBE | municipios=1 | raio=0.0 km | C_Z=952 | E_Z=227 | RR=4.196 | p=0.000000
+satscan_cluster_73=11 | polo=PRIMAVERA DE RONDÔNIA | municipios=3 | raio=44.0 km | C_Z=1829 | E_Z=693 | RR=2.638 | p=0.000000
+satscan_cluster_74=43 | polo=ROLADOR | municipios=3 | raio=16.6 km | C_Z=4049 | E_Z=2219 | RR=1.825 | p=0.000000
+satscan_cluster_75=35 | polo=MAIRIPORÃ | municipios=1 | raio=0.0 km | C_Z=15621 | E_Z=11808 | RR=1.323 | p=0.000000
+satscan_cluster_76=51 | polo=LAMBARI D'OESTE | municipios=9 | raio=73.5 km | C_Z=12510 | E_Z=9159 | RR=1.366 | p=0.000000
+satscan_cluster_77=25 | polo=COREMAS | municipios=2 | raio=16.9 km | C_Z=3709 | E_Z=2071 | RR=1.791 | p=0.000000
+satscan_cluster_78=32 | polo=VIANA | municipios=1 | raio=0.0 km | C_Z=12519 | E_Z=9252 | RR=1.353 | p=0.000000
+satscan_cluster_79=22 | polo=BOM JESUS | municipios=3 | raio=49.3 km | C_Z=4651 | E_Z=2821 | RR=1.649 | p=0.000000
+satscan_cluster_80=29 | polo=MANOEL VITORINO | municipios=3 | raio=37.9 km | C_Z=3061 | E_Z=1653 | RR=1.852 | p=0.000000
+satscan_cluster_81=15 | polo=SÃO JOÃO DO ARAGUAIA | municipios=1 | raio=0.0 km | C_Z=1602 | E_Z=669 | RR=2.394 | p=0.000000
+satscan_cluster_82=21 | polo=SÃO PEDRO DOS CRENTES | municipios=1 | raio=0.0 km | C_Z=847 | E_Z=240 | RR=3.537 | p=0.000000
+satscan_cluster_83=29 | polo=CHORROCHÓ | municipios=2 | raio=30.1 km | C_Z=1947 | E_Z=930 | RR=2.093 | p=0.000000
+satscan_cluster_84=43 | polo=IGREJINHA | municipios=1 | raio=0.0 km | C_Z=6292 | E_Z=4301 | RR=1.463 | p=0.000000
+satscan_cluster_85=15 | polo=BANNACH | municipios=2 | raio=62.8 km | C_Z=1195 | E_Z=463 | RR=2.579 | p=0.000000
+satscan_cluster_86=27 | polo=POÇO DAS TRINCHEIRAS | municipios=4 | raio=18.3 km | C_Z=5913 | E_Z=4010 | RR=1.475 | p=0.000000
+satscan_cluster_87=26 | polo=JOÃO ALFREDO | municipios=1 | raio=0.0 km | C_Z=2765 | E_Z=1544 | RR=1.791 | p=0.000000
+satscan_cluster_88=29 | polo=MANSIDÃO | municipios=6 | raio=79.6 km | C_Z=6601 | E_Z=4623 | RR=1.428 | p=0.000000
+satscan_cluster_89=24 | polo=SÍTIO NOVO | municipios=2 | raio=12.6 km | C_Z=1368 | E_Z=591 | RR=2.315 | p=0.000000
+satscan_cluster_90=42 | polo=BOM JESUS | municipios=1 | raio=0.0 km | C_Z=565 | E_Z=138 | RR=4.093 | p=0.000000
+satscan_cluster_91=31 | polo=PALMÓPOLIS | municipios=10 | raio=49.5 km | C_Z=8273 | E_Z=6045 | RR=1.369 | p=0.000000
+satscan_cluster_92=17 | polo=PIUM | municipios=1 | raio=0.0 km | C_Z=981 | E_Z=357 | RR=2.745 | p=0.000000
+satscan_cluster_93=26 | polo=VERTENTES | municipios=1 | raio=0.0 km | C_Z=2955 | E_Z=1728 | RR=1.710 | p=0.000000
+satscan_cluster_94=13 | polo=BENJAMIN CONSTANT | municipios=1 | raio=0.0 km | C_Z=3201 | E_Z=1926 | RR=1.662 | p=0.000000
+satscan_cluster_95=29 | polo=ABARÉ | municipios=1 | raio=0.0 km | C_Z=1837 | E_Z=928 | RR=1.979 | p=0.000000
+satscan_cluster_96=13 | polo=TAPAUÁ | municipios=1 | raio=0.0 km | C_Z=1781 | E_Z=907 | RR=1.964 | p=0.000000
+satscan_cluster_97=11 | polo=BURITIS | municipios=3 | raio=64.7 km | C_Z=4572 | E_Z=3059 | RR=1.495 | p=0.000000
+satscan_cluster_98=29 | polo=MUCURI | municipios=1 | raio=0.0 km | C_Z=4933 | E_Z=3367 | RR=1.465 | p=0.000000
+satscan_cluster_99=25 | polo=SÃO JOÃO DO CARIRI | municipios=9 | raio=35.6 km | C_Z=3135 | E_Z=1927 | RR=1.627 | p=0.000000
+satscan_cluster_100=35 | polo=FRANCO DA ROCHA | municipios=1 | raio=0.0 km | C_Z=21847 | E_Z=18343 | RR=1.191 | p=0.000000
+satscan_cluster_101=14 | polo=CARACARAÍ | municipios=4 | raio=171.9 km | C_Z=4872 | E_Z=3334 | RR=1.461 | p=0.000000
+satscan_cluster_102=41 | polo=IVAÍ | municipios=1 | raio=0.0 km | C_Z=1389 | E_Z=659 | RR=2.107 | p=0.000000
+satscan_cluster_103=13 | polo=JAPURÁ | municipios=1 | raio=0.0 km | C_Z=800 | E_Z=290 | RR=2.761 | p=0.000000
+satscan_cluster_104=26 | polo=ARAÇOIABA | municipios=2 | raio=10.0 km | C_Z=4179 | E_Z=2814 | RR=1.485 | p=0.000000
+satscan_cluster_105=25 | polo=RIACHO DOS CAVALOS | municipios=1 | raio=0.0 km | C_Z=989 | E_Z=417 | RR=2.370 | p=0.000000
+satscan_cluster_106=13 | polo=LÁBREA | municipios=1 | raio=0.0 km | C_Z=3297 | E_Z=2163 | RR=1.524 | p=0.000000
+satscan_cluster_107=24 | polo=SANTA MARIA | municipios=1 | raio=0.0 km | C_Z=978 | E_Z=438 | RR=2.230 | p=0.000000
+satscan_cluster_108=33 | polo=ITABORAÍ | municipios=1 | raio=0.0 km | C_Z=32709 | E_Z=28878 | RR=1.133 | p=0.000000
+satscan_cluster_109=26 | polo=LIMOEIRO | municipios=2 | raio=12.2 km | C_Z=8054 | E_Z=6241 | RR=1.291 | p=0.000000
+satscan_cluster_110=35 | polo=ATIBAIA | municipios=1 | raio=0.0 km | C_Z=20883 | E_Z=17965 | RR=1.163 | p=0.000000
+satscan_cluster_111=51 | polo=RONDOLÂNDIA | municipios=1 | raio=0.0 km | C_Z=534 | E_Z=183 | RR=2.918 | p=0.000000
+satscan_cluster_112=29 | polo=CALDEIRÃO GRANDE | municipios=1 | raio=0.0 km | C_Z=1250 | E_Z=649 | RR=1.925 | p=0.000000
+satscan_cluster_113=43 | polo=CONDOR | municipios=1 | raio=0.0 km | C_Z=1067 | E_Z=562 | RR=1.899 | p=0.000000
+satscan_cluster_114=29 | polo=BARRA DO ROCHA | municipios=1 | raio=0.0 km | C_Z=671 | E_Z=297 | RR=2.258 | p=0.000000
+satscan_cluster_115=23 | polo=ARATUBA | municipios=1 | raio=0.0 km | C_Z=1049 | E_Z=563 | RR=1.864 | p=0.000000
+satscan_cluster_116=35 | polo=ITANHAÉM | municipios=1 | raio=0.0 km | C_Z=14655 | E_Z=12554 | RR=1.167 | p=0.000000
+satscan_cluster_117=25 | polo=MOGEIRO | municipios=1 | raio=0.0 km | C_Z=1167 | E_Z=657 | RR=1.777 | p=0.000000
+satscan_cluster_118=25 | polo=SOSSÊGO | municipios=2 | raio=13.1 km | C_Z=1040 | E_Z=568 | RR=1.832 | p=0.000000
+satscan_cluster_119=43 | polo=CONSTANTINA | municipios=1 | raio=0.0 km | C_Z=1417 | E_Z=850 | RR=1.667 | p=0.000000
+satscan_cluster_120=29 | polo=NOVA FÁTIMA | municipios=3 | raio=18.3 km | C_Z=2423 | E_Z=1664 | RR=1.456 | p=0.000000
+satscan_cluster_121=29 | polo=SANTO ESTÊVÃO | municipios=1 | raio=0.0 km | C_Z=3498 | E_Z=2569 | RR=1.362 | p=0.000000
+satscan_cluster_122=16 | polo=FERREIRA GOMES | municipios=2 | raio=50.0 km | C_Z=1914 | E_Z=1296 | RR=1.476 | p=0.000000
+satscan_cluster_123=22 | polo=ASSUNÇÃO DO PIAUÍ | municipios=2 | raio=34.0 km | C_Z=1981 | E_Z=1380 | RR=1.436 | p=0.000000
+satscan_cluster_124=29 | polo=MARCIONÍLIO SOUZA | municipios=1 | raio=0.0 km | C_Z=878 | E_Z=505 | RR=1.738 | p=0.000000
+satscan_cluster_125=11 | polo=ITAPUÃ DO OESTE | municipios=1 | raio=0.0 km | C_Z=829 | E_Z=473 | RR=1.754 | p=0.000000
+satscan_cluster_126=43 | polo=ARATIBA | municipios=1 | raio=0.0 km | C_Z=928 | E_Z=547 | RR=1.696 | p=0.000000
+satscan_cluster_127=17 | polo=DIANÓPOLIS | municipios=6 | raio=52.9 km | C_Z=3406 | E_Z=2628 | RR=1.296 | p=0.000000
+satscan_cluster_128=13 | polo=TABATINGA | municipios=1 | raio=0.0 km | C_Z=3901 | E_Z=3087 | RR=1.264 | p=0.000000
+satscan_cluster_129=23 | polo=TABULEIRO DO NORTE | municipios=1 | raio=0.0 km | C_Z=3323 | E_Z=2577 | RR=1.290 | p=0.000000
+satscan_cluster_130=23 | polo=JAGUARETAMA | municipios=2 | raio=27.7 km | C_Z=2410 | E_Z=1795 | RR=1.343 | p=0.000000
+satscan_cluster_131=25 | polo=AROEIRAS | municipios=1 | raio=0.0 km | C_Z=1380 | E_Z=933 | RR=1.479 | p=0.000000
+satscan_cluster_132=22 | polo=TANQUE DO PIAUÍ | municipios=2 | raio=12.9 km | C_Z=623 | E_Z=342 | RR=1.823 | p=0.000000
+satscan_cluster_133=29 | polo=CORAÇÃO DE MARIA | municipios=1 | raio=0.0 km | C_Z=1673 | E_Z=1180 | RR=1.418 | p=0.000000
+satscan_cluster_134=43 | polo=NOVO BARREIRO | municipios=1 | raio=0.0 km | C_Z=419 | E_Z=204 | RR=2.056 | p=0.000000
+satscan_cluster_135=11 | polo=CACAULÂNDIA | municipios=1 | raio=0.0 km | C_Z=519 | E_Z=278 | RR=1.865 | p=0.000000
+satscan_cluster_136=24 | polo=SÃO JOSÉ DO CAMPESTRE | municipios=2 | raio=14.2 km | C_Z=2948 | E_Z=2309 | RR=1.277 | p=0.000000
+satscan_cluster_137=43 | polo=DOIS IRMÃOS | municipios=1 | raio=0.0 km | C_Z=4585 | E_Z=3825 | RR=1.199 | p=0.000000
+satscan_cluster_138=33 | polo=MENDES | municipios=1 | raio=0.0 km | C_Z=2848 | E_Z=2259 | RR=1.261 | p=0.000000
+satscan_cluster_139=43 | polo=CORONEL BARROS | municipios=1 | raio=0.0 km | C_Z=280 | E_Z=127 | RR=2.200 | p=0.000000
+satscan_cluster_140=24 | polo=JAPI | municipios=3 | raio=17.4 km | C_Z=1187 | E_Z=833 | RR=1.425 | p=0.000000
+satscan_cluster_141=26 | polo=CASINHAS | municipios=1 | raio=0.0 km | C_Z=997 | E_Z=680 | RR=1.466 | p=0.000000
+satscan_cluster_142=35 | polo=CAJATI | municipios=6 | raio=36.3 km | C_Z=12816 | E_Z=11592 | RR=1.106 | p=0.000000
+satscan_cluster_143=23 | polo=ITATIRA | municipios=1 | raio=0.0 km | C_Z=1365 | E_Z=1003 | RR=1.361 | p=0.000000
+satscan_cluster_144=29 | polo=SANTA BÁRBARA | municipios=2 | raio=11.9 km | C_Z=2158 | E_Z=1696 | RR=1.272 | p=0.000000
+satscan_cluster_145=29 | polo=REMANSO | municipios=2 | raio=37.4 km | C_Z=2897 | E_Z=2357 | RR=1.229 | p=0.000000
+satscan_cluster_146=17 | polo=CASEARA | municipios=4 | raio=63.2 km | C_Z=1289 | E_Z=942 | RR=1.368 | p=0.000000
+satscan_cluster_147=29 | polo=SANTO ANTÔNIO DE JESUS | municipios=1 | raio=0.0 km | C_Z=9514 | E_Z=8515 | RR=1.117 | p=0.000000
+satscan_cluster_148=33 | polo=AREAL | municipios=1 | raio=0.0 km | C_Z=1932 | E_Z=1503 | RR=1.285 | p=0.000000
+satscan_cluster_149=23 | polo=COREAÚ | municipios=1 | raio=0.0 km | C_Z=1459 | E_Z=1095 | RR=1.332 | p=0.000000
+satscan_cluster_150=25 | polo=ALHANDRA | municipios=1 | raio=0.0 km | C_Z=2119 | E_Z=1678 | RR=1.263 | p=0.000000
+satscan_cluster_151=17 | polo=ITAPORÃ DO TOCANTINS | municipios=1 | raio=0.0 km | C_Z=244 | E_Z=120 | RR=2.040 | p=0.000000
+satscan_cluster_152=15 | polo=PRAINHA | municipios=1 | raio=0.0 km | C_Z=1919 | E_Z=1533 | RR=1.252 | p=0.000000
+satscan_cluster_153=51 | polo=ALTO PARAGUAI | municipios=1 | raio=0.0 km | C_Z=727 | E_Z=501 | RR=1.450 | p=0.000000
+satscan_cluster_154=26 | polo=ALTINHO | municipios=1 | raio=0.0 km | C_Z=1416 | E_Z=1091 | RR=1.298 | p=0.000000
+satscan_cluster_155=23 | polo=CARIDADE | municipios=1 | raio=0.0 km | C_Z=1301 | E_Z=995 | RR=1.307 | p=0.000000
+satscan_cluster_156=51 | polo=ACORIZAL | municipios=1 | raio=0.0 km | C_Z=421 | E_Z=260 | RR=1.618 | p=0.000000
+satscan_cluster_157=22 | polo=ALVORADA DO GURGUÉIA | municipios=1 | raio=0.0 km | C_Z=419 | E_Z=260 | RR=1.613 | p=0.000000
+satscan_cluster_158=15 | polo=CUMARU DO NORTE | municipios=1 | raio=0.0 km | C_Z=868 | E_Z=628 | RR=1.383 | p=0.000000
+satscan_cluster_159=23 | polo=PIQUET CARNEIRO | municipios=1 | raio=0.0 km | C_Z=1077 | E_Z=811 | RR=1.328 | p=0.000000
+satscan_cluster_160=14 | polo=CAROEBE | municipios=1 | raio=0.0 km | C_Z=685 | E_Z=479 | RR=1.431 | p=0.000000
+satscan_cluster_161=26 | polo=AFRÂNIO | municipios=1 | raio=0.0 km | C_Z=1193 | E_Z=921 | RR=1.296 | p=0.000000
+satscan_cluster_162=26 | polo=BUÍQUE | municipios=1 | raio=0.0 km | C_Z=3158 | E_Z=2704 | RR=1.168 | p=0.000000
+satscan_cluster_163=23 | polo=SANTANA DO CARIRI | municipios=1 | raio=0.0 km | C_Z=1110 | E_Z=851 | RR=1.305 | p=0.000000
+satscan_cluster_164=26 | polo=RIO FORMOSO | municipios=1 | raio=0.0 km | C_Z=1384 | E_Z=1093 | RR=1.266 | p=0.000000
+satscan_cluster_165=17 | polo=MURICILÂNDIA | municipios=1 | raio=0.0 km | C_Z=289 | E_Z=168 | RR=1.717 | p=0.000000
+satscan_cluster_166=43 | polo=RONDINHA | municipios=1 | raio=0.0 km | C_Z=405 | E_Z=259 | RR=1.565 | p=0.000000
+satscan_cluster_167=25 | polo=SÃO JOSÉ DO BREJO DO CRUZ | municipios=1 | raio=0.0 km | C_Z=259 | E_Z=148 | RR=1.749 | p=0.000000
+satscan_cluster_168=29 | polo=ALCOBAÇA | municipios=1 | raio=0.0 km | C_Z=1416 | E_Z=1129 | RR=1.254 | p=0.000000
+satscan_cluster_169=32 | polo=SERRA | municipios=1 | raio=0.0 km | C_Z=64072 | E_Z=62176 | RR=1.031 | p=0.000000
+satscan_cluster_170=11 | polo=TEIXEIRÓPOLIS | municipios=2 | raio=23.8 km | C_Z=1045 | E_Z=822 | RR=1.272 | p=0.000000
+satscan_cluster_171=23 | polo=BOA VIAGEM | municipios=2 | raio=32.4 km | C_Z=3871 | E_Z=3429 | RR=1.129 | p=0.000000
+satscan_cluster_172=17 | polo=CACHOEIRINHA | municipios=1 | raio=0.0 km | C_Z=292 | E_Z=183 | RR=1.594 | p=0.000000
+satscan_cluster_173=22 | polo=RIBEIRO GONÇALVES | municipios=1 | raio=0.0 km | C_Z=478 | E_Z=338 | RR=1.414 | p=0.000000
+satscan_cluster_174=23 | polo=GROAÍRAS | municipios=1 | raio=0.0 km | C_Z=1141 | E_Z=918 | RR=1.243 | p=0.000000
+satscan_cluster_175=42 | polo=ITÁ | municipios=1 | raio=0.0 km | C_Z=1018 | E_Z=813 | RR=1.252 | p=0.000001
+satscan_cluster_176=25 | polo=CASSERENGUE | municipios=1 | raio=0.0 km | C_Z=489 | E_Z=355 | RR=1.379 | p=0.000002
+satscan_cluster_177=41 | polo=REBOUÇAS | municipios=1 | raio=0.0 km | C_Z=907 | E_Z=719 | RR=1.262 | p=0.000003
+satscan_cluster_178=29 | polo=RETIROLÂNDIA | municipios=1 | raio=0.0 km | C_Z=1385 | E_Z=1153 | RR=1.201 | p=0.000005
+satscan_cluster_179=27 | polo=BRANQUINHA | municipios=1 | raio=0.0 km | C_Z=660 | E_Z=507 | RR=1.302 | p=0.000011
+satscan_cluster_180=29 | polo=MONTE SANTO | municipios=1 | raio=0.0 km | C_Z=2825 | E_Z=2498 | RR=1.131 | p=0.000018
+satscan_cluster_181=21 | polo=JUNCO DO MARANHÃO | municipios=1 | raio=0.0 km | C_Z=297 | E_Z=200 | RR=1.486 | p=0.000019
+satscan_cluster_182=41 | polo=ADRIANÓPOLIS | municipios=1 | raio=0.0 km | C_Z=687 | E_Z=536 | RR=1.283 | p=0.000040
+satscan_cluster_183=24 | polo=TRIUNFO POTIGUAR | municipios=1 | raio=0.0 km | C_Z=249 | E_Z=163 | RR=1.524 | p=0.000053
+satscan_cluster_184=13 | polo=NOVO ARIPUANÃ | municipios=1 | raio=0.0 km | C_Z=1404 | E_Z=1187 | RR=1.182 | p=0.000095
+satscan_cluster_185=43 | polo=PAULO BENTO | municipios=1 | raio=0.0 km | C_Z=279 | E_Z=189 | RR=1.474 | p=0.000107
+satscan_cluster_186=22 | polo=JUREMA | municipios=1 | raio=0.0 km | C_Z=322 | E_Z=226 | RR=1.427 | p=0.000153
+satscan_cluster_187=42 | polo=GUATAMBÚ | municipios=1 | raio=0.0 km | C_Z=388 | E_Z=282 | RR=1.377 | p=0.000190
+satscan_cluster_188=17 | polo=PEIXE | municipios=3 | raio=47.0 km | C_Z=996 | E_Z=824 | RR=1.208 | p=0.000507
+satscan_cluster_189=26 | polo=ILHA DE ITAMARACÁ | municipios=1 | raio=0.0 km | C_Z=1414 | E_Z=1209 | RR=1.169 | p=0.000708
+satscan_cluster_190=43 | polo=SÃO MIGUEL DAS MISSÕES | municipios=3 | raio=31.9 km | C_Z=1107 | E_Z=932 | RR=1.188 | p=0.001480
+satscan_cluster_191=26 | polo=CAETÉS | municipios=1 | raio=0.0 km | C_Z=1591 | E_Z=1390 | RR=1.145 | p=0.006672
+satscan_cluster_192=41 | polo=MORRETES | municipios=1 | raio=0.0 km | C_Z=2346 | E_Z=2102 | RR=1.116 | p=0.008001
+satscan_cluster_193=23 | polo=BARROQUINHA | municipios=1 | raio=0.0 km | C_Z=866 | E_Z=724 | RR=1.196 | p=0.014000
+satscan_cluster_194=11 | polo=RIO CRESPO | municipios=1 | raio=0.0 km | C_Z=250 | E_Z=178 | RR=1.401 | p=0.020000
+satscan_cluster_195=24 | polo=NOVA CRUZ | municipios=1 | raio=0.0 km | C_Z=3346 | E_Z=3071 | RR=1.090 | p=0.033000

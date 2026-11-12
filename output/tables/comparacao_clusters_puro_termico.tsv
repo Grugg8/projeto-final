@@ -1,0 +1,3 @@
+rotulo	periodo	clusters	prim_polo	prim_uf	prim_municipios	prim_raio_km	prim_rr	prim_p	cob_municipios	cob_casos	cob_casos_pct	jaccard_vs_puro_pct	recuperacao_vs_puro_pct	wmape_pct
+puro	completo	129	Adolfo	São Paulo	319	197.3753455753	2.9904856642	1e-17	1907	14175688	64.149172554302	100	100	75.0808809925994
+termico	completo	128	Queluzito	Minas Gerais	362	199.5491011125	2.0800014519	1e-17	1679	13989139	63.3049832641008	55.9808612440191	67.488201363398	64.9245998033523

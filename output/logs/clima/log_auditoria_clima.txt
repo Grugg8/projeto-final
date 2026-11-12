@@ -1,0 +1,14 @@
+linhas_esperadas=1068288
+linhas_obtidas=1068288
+municipios_unicos=5564
+meses_unicos=192
+qc_nivel1_celulas_acima_1500mm=414
+qc_nivel2_estacoes_ano_removidas=105
+precip_municipios_mes_por_idw=440558
+na_temp=0.0000%
+na_umid=0.0000%
+na_precip=0.0000%
+BR_temp_media_C=23.26
+BR_umid_media=70.66
+BR_precip_anual_mm=7019736
+tmax_status=Tmax diaria processada no script 02b (arquivos t2m_diario_municipal_AAAA.rds)

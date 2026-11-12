@@ -1,0 +1,8 @@
+log_auditoria_mapas_pranchas - figuras de mapas derivadas do SaTScan
+persistencia_municipios_em_zona=3016
+persistencia_distribuicao=1=378 | 2=318 | 3=265 | 4=217 | 5=183 | 6=219 | 7=469 | 8=967
+persistencia_ge6=1655 (29.7% do painel) | =8=967 (17.4%)
+contornos_estaduais_aneis_internos=2903->0 (fissuras topológicas removidas)
+rr_limite_2x1_puro_calor=8.60
+rr_limite_prancha_apendice=11.92
+figuras=fig_mapa_persistencia_ajustes.png | fig_mapa_clusters_2x1_puro_calor.png | fig_mapa_rr_2x1_puro_calor.png | fig_mapa_clusters_2x1_puro_com_sem2024.png | fig_mapa_clusters_2x1_calor_com_sem2024.png | fig_prancha_clusters_completo.png | fig_prancha_clusters_sem2024.png | fig_prancha_rr_completo.png

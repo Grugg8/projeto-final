@@ -1,0 +1,2 @@
+modelo	periodo	anos	stub	n_municipios	soma_observado	soma_esperado	soma_erro_abs	wmape_pct	n_zonas_sig	prim_polo	prim_uf	prim_rr	checagem_soma_total	checagem_zonas
+comp5	completo	2010-2025	satscan_comp5	5564	22098006	22098005.999999966	15888137.75893821	71.89851319136311	184	Araújos	Minas Gerais	2.5849357489	ok (dif 0.000000)	ok (184 zonas; desvio máx 0.0000)

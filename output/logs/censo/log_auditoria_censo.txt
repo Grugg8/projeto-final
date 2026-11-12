@@ -1,0 +1,13 @@
+municipios_esperado=5564
+municipios_obtido=5564
+na_em_proporcoes=0
+celulas_suprimidas_derivadas_agua=29
+celulas_suprimidas_derivadas_esgoto=3987
+pop_censo_2022_nacional=203077589
+total_bruto_agua_rede=60775085
+total_compat_agua_rede=60774408
+diff_agua_bruto_compat=-677
+BR_prop_agua_rede=83.88
+BR_prop_esgoto_adequado=77.41
+BR_prop_lixo_coletado=91.71
+BR_pop_favela=16390790

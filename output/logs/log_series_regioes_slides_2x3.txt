@@ -1,0 +1,8 @@
+Auditoria da figura regional 2 x 3 para os slides
+Painel: 89.024 observações; 5.564 municípios; 16 anos.
+Casos: 22.098.006; somas regionais reproduzem o Brasil em todos os anos.
+TI = soma dos casos / soma da população x 100.000.
+Ordem: Centro-Oeste, Nordeste, Norte, Sudeste, Sul, Brasil.
+Linha tracejada: série nacional em cada painel regional.
+Eixos verticais próprios por painel, como na figura do manuscrito.
+Saída vetorial com device pdf, fonte serifada e gravação temporária.

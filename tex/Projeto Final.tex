@@ -1,0 +1,312 @@
+% !TEX TS-program = pdflatexmk
+\documentclass[12pt,a4paper,header]{abnt}
+
+\usepackage[brazilian]{babel}        
+\usepackage[utf8]{inputenc} 
+
+\usepackage[hypertexnames=false]{hyperref}
+\usepackage{bookmark}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{xltabular}
+\usepackage{float}
+
+\usepackage{pdfpages} % Acrescentar pdf ficha bibliográfica
+
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+\usepackage{verbatim} % para comentários em blocos
+
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Teoremas, definicoes, etc%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{thm}{Teorema}[chapter]
+\newtheorem{cor}{Corolário}[chapter]
+\newtheorem{lem}{Lema}[chapter]
+\newtheorem{defi}{Definição}[chapter]
+\newtheorem{exe}{Exemplo}[chapter]
+\newtheorem{prop}{Proposição}[chapter]
+
+\renewcommand{\ABNTchapterfont}{\bfseries}
+\renewcommand{\ABNTsectionfont}{\bfseries}
+
+\fancypagestyle{logouff}{%
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyhead{}
+	\fancyhead[R]{\includegraphics[width=0.7\textwidth]{assets/logoUFF.pdf}}% Your logo/image
+  	\setlength{\headheight}{30pt} 
+  	\setlength{\headsep}{2cm}
+}
+
+\hbadness=10000
+\hfuzz=40pt
+\vfuzz=20pt
+
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.80}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.75}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macros dinamicas geradas em ../output/            %
+%  criado para permitir caminho sem espacos no TeX)    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{../output/figures/}{assets/}}
+\input{../output/macros/macros_descritivas.tex}
+\input{../output/macros/macros_lisa.tex}
+% Modelo canônico reportado: varredura puramente espacial.
+\input{../output/macros/macros_satscan_puro.tex}
+\input{../output/macros/macros_heatmap_uf.tex}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%colocar aqui o nome do aluno%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\autor{Lucas Batista de Oliveira}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%colocar aqui o título da monografia%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titulo{Distribuição espacial da dengue no Brasil: identificação de áreas de alto risco e características socioambientais}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%colocar aqui o nome do orientador%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\orientador{Prof. Dr. Rafael Santos Erbisti}  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%colocar aqui o nome do co-orientador, caso exista%%
+%se nao existir, comente a linha de codigo a seguir%
+%ATENCAO: se nao houver co-orinetador também deve  %
+%         ser comentada a linha 124, onde aparece  %
+%         "Co-Orientador: & \ABNTcoorientadordata" %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\coorientador{Prof. Dr. Nome do Co-orientador}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%colocar aqui a data da apresentacao da monografia%
+%segue um exemplo								  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\data{13 de novembro de 2026}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%nao mexer até a linha 170%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\comentario{Monografia apresentada para obtenção do grau de Bacharel em Estatística pela Universidade Federal Fluminense.}
+
+\instituicao{Departamento de Estatística \par Instituto de Matemática e Estatística \par Universidade Federal Fluminense}
+
+\local{Niterói - RJ, Brasil}
+
+\capa
+
+\vspace{10cm}
+
+
+
+\begin{titlepage}
+
+\thispagestyle{logouff}
+
+\vspace{2cm}
+
+\hspace{.2\textwidth} % posicionando a minipage
+\begin{minipage}{.7\textwidth}
+
+\begin{flushright}
+
+{\large \bf \ABNTautordata} \\[3cm]
+
+{\Large \bf \ABNTtitulodata}\\[3cm]
+
+{\bf Trabalho de Conclusão de Curso}\\[1cm]
+
+\end{flushright}
+
+\begin{espacosimples}
+
+\ABNTcomentariodata
+
+\end{espacosimples}
+
+\vspace{1cm}
+
+\hfill 
+\begin{tabular}{rl}
+Orientador(a): & \ABNTorientadordata\\
+%%%%%%%%%%%%%%%%%
+% Comentar linha seguinte caso não haja co-orientador
+% Co-Orientador(a): & \ABNTcoorientadordata
+\end{tabular}
+
+\end{minipage}
+
+\vspace{7cm}
+
+\begin{center}
+
+\ABNTlocaldata
+
+\ABNTdatadata
+
+\end{center}
+
+\end{titlepage}
+
+
+%folha de aprovacao com as assinaturas - Editar os membros da banca
+\begin{folhadeaprovacao}
+
+\thispagestyle{logouff}
+
+\hspace{.2\textwidth} % posicionando a minipage
+\begin{minipage}{.7\textwidth}
+
+\begin{flushright}
+
+{\large \bf \ABNTautordata}\\[1cm]
+
+{\large \bf \ABNTtitulodata}\\[1cm]
+
+\end{flushright}
+Monografia de Projeto Final de Graduação sob o título \textit{``\ABNTtitulodata''},
+defendida por \ABNTautordata~e aprovada em \ABNTdatadata, na cidade de Niterói,
+no Estado do Rio de Janeiro, pela banca examinadora constituída pelos
+professores:
+\begin{flushright}
+
+\begin{espacosimples}
+
+%Folha de assinaturas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Preencher os dados dos membros da banca%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{1.5cm}
+\noindent\rule{10cm}{0.4pt}\\
+{\bf Prof. Dr. Rafael Santos Erbisti}\\
+Departamento de Estatística, UFF\\
+
+%se o trabalho não tiver co-orientator, comentar as 4 linhas que seguem
+%\vspace{1.5cm}
+%\noindent\rule{10cm}{0.4pt}\\
+%{\bf Prof. Dr. Nome do Co-Orientador}\\
+%Departamento de Estatística, UFF\\
+
+
+\vspace{1.5cm}
+\noindent\rule{10cm}{0.4pt}\\
+{\bf Prof. Dr. Guilherme Augusto Veloso}\\
+Departamento de Estatística, UFF \\
+
+\vspace{1.5cm}
+\noindent\rule{10cm}{0.4pt}\\
+{\bf Dra. Nildimar Alves Honório}\\
+LIVH/IOC, Fiocruz \\
+
+%\vspace{1.5cm}
+%\noindent\rule{10cm}{0.4pt}\\
+%{\bf Profa. Ma. Nome do 2º membro da banca}\\
+%Instituição do 2º membro da banca\\
+
+\end{espacosimples}
+
+\end{flushright}
+
+\vspace{1.5cm}
+\hfill Niterói, \ABNTdatadata
+
+\end{minipage}
+
+\end{folhadeaprovacao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% inclusão de ficha bibliográfica
+% retire o símbolo de comentário e corrija o nome do arquivo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\includepdf[pages=-]{ficha.pdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%escreva aqui o resumo do seu trabalho%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{resumo}
+Este estudo descreve a distribuição espacial do risco de dengue no Brasil entre 2010 e 2025 e avalia como a delimitação de zonas de alto risco varia segundo a padronização indireta por covariáveis e a exclusão de 2024. Analisaram-se 22.098.006 casos prováveis em um painel de 5.564 municípios harmonizados à malha de 2010. Foram realizadas análises descritivas, de autocorrelação espacial global e local e de varredura espacial de Kulldorff, com modelo discreto de Poisson, em oito formulações: uma sem ajuste e sete com padronização indireta por covariáveis climáticas, de saneamento e de urbanização. A varredura utilizou janela circular limitada a 16\% da população sob risco e a 200 km de raio, 999 réplicas de Monte Carlo e reporte hierárquico a 5\% sem sobreposição geográfica. O Índice Global de Moran foi positivo e estatisticamente significativo nos 16 anos (0,215–0,613). As zonas de alto risco concentraram-se no Centro-Sul, sobretudo no Sudeste e Centro-Oeste. Sem ajuste, foram identificadas 129 zonas, que reuniram 64,1\% dos casos e 30,0\% da população sob risco; a zona primária, centrada em Adolfo (SP), abrangia 319 municípios (RR = 2,99). Nos sete ajustes, o número de zonas variou de 128 a 195 e o WMAPE de 64,9\% a 74,4\%, ante 75,1\% sem ajuste. A exclusão de 2024 alterou o número de zonas em todas as formulações e o polo primário em sete. A distribuição apresentou estrutura espacial, mas a delimitação das zonas variou segundo a padronização e o período. As comparações são exploratórias e não permitem inferir efeitos causais das covariáveis.
+
+\vspace{1cm}
+\noindent Palavras-chave: Estatística Espacial. Varredura Espacial. Índice de Moran. Agrupamentos Espaciais. Dengue.
+
+\end{resumo}
+
+\begin{abstract}
+This study describes the spatial distribution of dengue risk in Brazil from 2010 to 2025 and assesses how high-risk zone delineation varies with indirect covariate standardization and exclusion of 2024. We analyzed 22,098,006 probable cases in a panel of 5,564 municipalities harmonized to the 2010 municipal grid. Descriptive, global and local spatial autocorrelation, and Kulldorff spatial scan analyses were conducted using a discrete Poisson model and eight formulations: one unadjusted and seven indirectly standardized by climate, sanitation and urbanization covariates. The scan used a circular window limited to 16\% of the population at risk and a 200-km radius, 999 Monte Carlo replications, and hierarchical reporting at the 5\% level without geographic overlap. Global Moran's I was positive and statistically significant in all 16 years (0.215–0.613). High-risk zones were concentrated in the Center-South, especially in the Southeast and Center-West. The unadjusted scan identified 129 zones, containing 64.1\% of cases and 30.0\% of the population at risk; the primary zone, centered on Adolfo, São Paulo, comprised 319 municipalities (RR = 2.99). Across the seven adjusted formulations, the number of zones ranged from 128 to 195 and WMAPE from 64.9\% to 74.4\%, compared with 75.1\% without adjustment. Excluding 2024 changed the number of zones in all formulations and the primary cluster location in seven. Spatial structure was observed, but zone delineation varied with covariate standardization and study period. These comparisons are exploratory and do not support causal inference about the covariates.
+
+\vspace{1cm}
+\noindent Keywords: Spatial Statistics. Spatial Scan Statistics. Moran's I. Spatial Clusters. Dengue.
+
+\end{abstract}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%escreva aqui a sua dedicatória% (opcional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Dedicatória}
+Dedico esta obra, cuja serventia científica ainda não conheço, a mim mesmo. Todo o apoio que me foi dado serviu para que eu não desistisse, mas o caminho foi trilhado por mim, sem que outra pessoa pudesse percorrê-lo em meu lugar.  
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%escreva aqui seus agradecimentos% (opcional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Agradecimentos}
+
+A Deus, sobretudo, e a todos os santos, os quais roguei por intercessão talvez menos do que deveria. Em especial, Santa Rita dos Impossíveis, cujo milagre, tal qual um grão, deu um fruto: este fruto.
+
+A Ana Beatriz Monteiro Fonseca, a Bia, que olhou para mim com fé e bondade, e que me levou ao caminho que percorro até hoje, com alegria e gratidão. Ainda hoje conto com seus direcionamentos e ouço atentamente seu falar, porque é sobre a luz que ela fala, e sob a luz eu quero ficar. Jamais esquecerei o que fizeste por mim, minha querida amiga, e o fizeste com amor. Torno público, aqui, meu contrato eterno de gratidão a ti.
+
+Ao meu amado mestre, Rafael Santos Erbisti, pelas caronas, almoços e jantares, conversas e companhia, paciência, brincadeiras, e tudo o que era permitido viver a cada encontro presencial ou remoto. Por ter dado a mim espaço e voz, mas também conselhos e advertências, afinal, se não há crescimento sem estímulo, também não há sem disciplina. Por ter acreditado em si mesmo e não ter desistido do que sempre quis para si, tornando-se, hoje, uma referência para quem longe ou perto está. Não posso deixar de mencionar sua importância para o curso que hoje estou a me formar: seus feitos elevaram nosso patamar. Você é um ser iluminado.
+
+A Ana Maria Lima de Farias, por sua competência como docente e administradora, que fez do local onde passei mais de 4 anos da vida um verdadeiro campo de conquistas e, também, a Jessica Quintanilha Kubrusly, que me introduziu à vida científica de maneira sublime e que construiu parte do ser que hoje escreve este texto.
+
+A criatura divina, que não ouso cometer o pecado de chamar apenas de amigo, Yan Breno Azeredo Gomes da Silva. Esse trabalho de conclusão de curso finda o percurso que fiz por longos anos, sob diversas intempéries, nas quais sempre estivemos juntos: só nós dois sabemos como é vir do nada e chegar aqui. Para além disso, aqui, também, é findada a construção do patamar de apoio para os próximos passos, cuja direção é a contribuição social efetiva que tanto sonhamos. Sua trajetória, meu camarada, me inspira diariamente; e é na excelência que presencio que quero chegar. Tens todo o meu carinho e admiração!
+
+Por fim, se devo gratidão a esse tanto de gente estranha, quem dirá à minha família, sobretudo, meus pais: Rose e Inácio. Meu eu no passado jamais ousaria vislumbrar a luz de um dia futuro sem que, do momento da descoberta da gestação que me trouxe ao mundo até o presente dia da marcha de minha história, tivessem firmado um contrato de responsabilidade caro, longo e sem garantia de benefícios. No que me formo em breve (assim espero!), talvez eles não tenham noção. No entanto, mesmo não sabendo, olham para mim e dizem: "que orgulho de você, meu filho". Mesmo que eu saiba que o futuro nos reserva uma coexistência inexistente, escrevo isso sob lágrimas e desespero. Até o meu último dia nessa terra feroz, triste e que marcha rumo a uma situação inóspita, darei meu melhor por vocês e pelo futuro de meu irmão. Obrigado. Da alma, obrigado.
+\tableofcontents{}
+\listoffigures
+\listoftables
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Aqui começam os capítulo da sua monografia%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{sections/01_introducao.tex}
+\input{sections/02_materiais_metodos.tex}
+\input{sections/03_resultados.tex}
+\input{sections/04_discussao_conclusoes.tex}
+\input{sections/05_apendices.tex}
+\end{figure}
+
+\bibliography{referencias}
+
+\end{document}

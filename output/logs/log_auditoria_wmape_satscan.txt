@@ -1,0 +1,6 @@
+log_auditoria_wmape_satscan - consolidação das rodadas do SaTScan
+modelos_lidos=16/16 (2 cenários)
+checagens_wmape=todas ok (recálculo independente confere)
+cenario_completo: Sem ajuste=75.08% | Calor=64.92% | Esgoto adequado=71.85% | Densidade urbana=74.29% | Proporção urbana=74.44% | Água por rede=70.53% | Coleta de lixo=72.10% | Índice composto=71.90%
+cenario_sem2024: Sem ajuste=80.98% | Calor=71.02% | Esgoto adequado=78.31% | Densidade urbana=80.53% | Proporção urbana=80.31% | Água por rede=76.84% | Coleta de lixo=78.23% | Índice composto=78.91%
+sensibilidade_2024 (Jaccard entre cenários): Sem ajuste=61% | Calor=51% | Esgoto adequado=63% | Densidade urbana=55% | Proporção urbana=58% | Água por rede=60% | Coleta de lixo=60% | Índice composto=61%

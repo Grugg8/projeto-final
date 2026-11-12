@@ -1,0 +1,2 @@
+modelo	periodo	anos	stub	n_municipios	soma_observado	soma_esperado	soma_erro_abs	wmape_pct	n_zonas_sig	prim_polo	prim_uf	prim_rr	checagem_soma_total	checagem_zonas
+esgoto	sem2024	2010-2025 sem 2024	satscan_esgoto_sem2024	5564	15664546	15664546.000000007	12267368.00571381	78.31294954679062	174	Iacri	São Paulo	3.507329552	ok (dif 0.000000)	ok (174 zonas; desvio máx 0.0000)

@@ -1,0 +1,55 @@
+slide	titulo	duracao_segundos	entrada	saida
+1	Abertura	45	00:00	00:45
+2	Dengue e heterogeneidade territorial	75	00:45	02:00
+3	Antecedentes e recorte do estudo	75	02:00	03:15
+4	Objetivos	45	03:15	04:00
+5	Desenho e unidade de análise	50	04:00	04:50
+6	Fontes e compatibilização	50	04:50	05:40
+7	Dos registros ao painel espacial	45	05:40	06:25
+8	Incidência anual e razão acumulada	65	06:25	07:30
+9	Vizinhança e pesos espaciais	45	07:30	08:15
+10	Índice Global de Moran	60	08:15	09:15
+11	Inferência para o Moran global	50	09:15	10:05
+12	Moran local e interpretação dos quadrantes	75	10:05	11:20
+13	Varredura espacial de Poisson	50	11:20	12:10
+14	Casos esperados sob risco homogêneo	45	12:10	12:55
+15	Janelas candidatas e desenho da busca	45	12:55	13:40
+16	Razão de verossimilhança	90	13:40	15:10
+17	Monte Carlo e significância da busca	75	15:10	16:25
+18	Risco relativo de uma zona	50	16:25	17:15
+19	Exemplo de cálculo para uma zona	65	17:15	18:20
+20	Ondas de calor: definição do indicador	60	18:20	19:20
+21	População urbana: interpolação entre censos	50	19:20	20:10
+22	Densidade e proporção urbanas	50	20:10	21:00
+23	Covariáveis e formação dos estratos	45	21:00	21:45
+24	Índice socioambiental composto	65	21:45	22:50
+25	Padronização indireta por covariável	75	22:50	24:05
+26	Sem ajuste e com padronização	65	24:05	25:10
+27	Mesma zona, dois casos esperados	75	25:10	26:25
+28	O papel das covariáveis nesta aplicação	75	26:25	27:40
+29	WMAPE e concordância espacial	60	27:40	28:40
+30	Sensibilidade à retirada de 2024	50	28:40	29:30
+31	Evolução anual da incidência	25	29:30	29:55
+32	Sazonalidade mensal	15	29:55	30:10
+33	Evolução regional da incidência	15	30:10	30:25
+34	Heatmap da incidência por UF e ano	15	30:25	30:40
+35	Carga acumulada municipal	15	30:40	30:55
+36	Recorrência de anos epidêmicos	15	30:55	31:10
+37	Autocorrelação espacial nos 16 anos	20	31:10	31:30
+38	Associação espacial local	20	31:30	31:50
+39	Incidência por estratos das covariáveis	20	31:50	32:10
+40	Zonas de alto risco sem ajuste	20	32:10	32:30
+41	Zona primária: Adolfo (SP)	25	32:30	32:55
+42	Comparação das oito formulações	25	32:55	33:20
+43	Zonas após padronização por calor	20	33:20	33:40
+44	Risco relativo municipal sem ajuste	15	33:40	33:55
+45	Risco relativo municipal sob calor	15	33:55	34:10
+46	WMAPE nacional e diferenças regionais	25	34:10	34:35
+47	Recorrência entre as formulações	15	34:35	34:50
+48	Sensibilidade à exclusão de 2024	25	34:50	35:15
+49	Zonas sem ajuste no cenário sem 2024	15	35:15	35:30
+50	Interpretação dos achados	45	35:30	36:15
+51	Limitações	40	36:15	36:55
+52	Considerações finais	35	36:55	37:30
+53	Comparação do RR em escala comum	0	37:30	37:30
+54	Referências citadas	0	37:30	37:30

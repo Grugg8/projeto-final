@@ -1,0 +1,13 @@
+versao=v5-melhor-pior
+linhas=5564 | NAs=0 | IDs identicos a malha=TRUE
+mediana_dias_onda_total=390
+mediana_prop_esgoto_adequado=59.35
+mediana_prop_esgoto_rede_legado=32.29
+mediana_prop_agua_rede=75.79
+mediana_prop_lixo_coletado=85.07
+COVAR_CALOR: nivel1 n=1855 [165-362] TI=431.7 | nivel2 n=1855 [362-415] TI=738.3 | nivel3 n=1854 [415-526] TI=1088.7
+COVAR_ESGOTO: nivel1 n=1855 [76.18-100.00] TI=797.6 | nivel2 n=1855 [38.53-76.17] TI=483.5 | nivel3 n=1854 [0.00-38.52] TI=357.5
+COVAR_DENSURB: nivel1 n=1855 [246.9-2494] TI=613.1 | nivel2 n=1855 [2494.0-3847] TI=768.4 | nivel3 n=1854 [3847.0-19370] TI=649.2
+COVAR_PROPURB: nivel1 n=1855 [0.00001963-0.002886] TI=436.5 | nivel2 n=1855 [0.00288800-0.007816] TI=558.3 | nivel3 n=1854 [0.00781900-0.992300] TI=732.8
+COVAR_AGUA: nivel1 n=1855 [83.41-100.00] TI=821.7 | nivel2 n=1855 [66.63-83.39] TI=502.5 | nivel3 n=1854 [0.00-66.58] TI=311.7
+COVAR_LIXO: nivel1 n=1855 [92.230-100.00] TI=779.0 | nivel2 n=1855 [75.470-92.22] TI=526.8 | nivel3 n=1854 [1.684-75.46] TI=305.5

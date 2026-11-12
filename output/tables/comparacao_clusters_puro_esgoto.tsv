@@ -1,0 +1,3 @@
+rotulo	periodo	clusters	prim_polo	prim_uf	prim_municipios	prim_raio_km	prim_rr	prim_p	cob_municipios	cob_casos	cob_casos_pct	jaccard_vs_puro_pct	recuperacao_vs_puro_pct	wmape_pct
+puro	completo	129	Adolfo	São Paulo	319	197.3753455753	2.9904856642	1e-17	1907	14175688	64.149172554302	100	100	75.0808809925994
+esgoto	completo	178	Iacri	São Paulo	314	197.0293801014	2.7911450399	1e-17	2059	14135713	63.9682738795528	64.4960597262547	81.5416885159937	71.8507558903769
